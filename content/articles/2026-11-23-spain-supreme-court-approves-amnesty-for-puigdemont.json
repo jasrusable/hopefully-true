@@ -1,0 +1,45 @@
+{
+  "id": "2026-11-23-spain-supreme-court-approves-amnesty-for-puigdemont",
+  "slug": "2026-11-23-spain-supreme-court-approves-amnesty-for-puigdemont",
+  "topic": "Spain's Supreme Court grants amnesty to Carles Puigdemont",
+  "title": "Spain Supreme Court Approves Amnesty for Puigdemont",
+  "dek": "The ruling ends legal proceedings against the former Catalan president and other leaders from the 2017 independence declaration.",
+  "category": "Politics",
+  "tags": [
+    "spain",
+    "catalonia",
+    "puigdemont",
+    "amnesty"
+  ],
+  "body": "Spain's Supreme Court approved amnesty for former Catalan president Carles Puigdemont on November 23, 2026. The decision applies to key leaders involved in the October 2017 events and closes the related legal proceedings. Puigdemont remains in self-exile in Belgium, but the ruling may now facilitate his return to Spain.\n\nThe 2017 declaration of independence by Catalonia triggered a prolonged constitutional crisis in Spain. Courts pursued cases against several figures who supported the move, leading to years of political and legal battles. This amnesty brings definitive closure to those cases and resolves major elements of the crisis.\n\n## What the ruling changes\n\nThe Supreme Court decision ends active proceedings tied to the independence bid. It covers actions by prominent leaders and marks the conclusion of a chapter in relations between Catalonia and the rest of Spain. Reactions have differed across the Spanish political spectrum, with some viewing it as a necessary step and others expressing opposition.\n\n## Possible next steps\n\nWith the amnesty in place, Puigdemont could return without facing the previous charges. The move follows extended disputes that shaped Spanish politics for nearly a decade. Observers see the ruling as ending a significant period of tension in Catalan-Spanish relations.",
+  "sources": [
+    {
+      "title": "Supreme Court of Spain grants amnesty to Puigdemont",
+      "url": "https://elmundo.es/espana/2026/11/23/6b042ed9e4d4d8872c8b4579.html"
+    }
+  ],
+  "publishedAt": "2026-11-23T18:24:15.734Z",
+  "models": {
+    "research": "grok-4.3",
+    "write": "grok-4.3"
+  },
+  "costUsd": 0.0033,
+  "hash": "1c56e2fd33",
+  "image": {
+    "hero": {
+      "src": "/img/2026-11-23-spain-supreme-court-approves-amnesty-for-puigdemont-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 38350
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-spain-supreme-court-approves-amnesty-for-puigdemont-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 8874
+    },
+    "alt": "Open gate on a quiet beach at dusk in flat vector style.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true
+  }
+}

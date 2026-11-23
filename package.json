@@ -1,0 +1,18 @@
+{
+  "name": "hopefully-true",
+  "private": true,
+  "type": "module",
+  "description": "News that is hopefully true: a small daily news site written by Grok.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "daily": "node src/daily.mjs",
+    "build": "node src/sync-readme.mjs && node src/build-site.mjs out",
+    "check": "node src/sync-readme.mjs --check",
+    "serve": "python3 -m http.server 8787 -d out"
+  },
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

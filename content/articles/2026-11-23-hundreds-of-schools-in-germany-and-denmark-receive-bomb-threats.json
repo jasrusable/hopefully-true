@@ -1,0 +1,45 @@
+{
+  "id": "2026-11-23-hundreds-of-schools-in-germany-and-denmark-receive-bomb-threats",
+  "slug": "2026-11-23-hundreds-of-schools-in-germany-and-denmark-receive-bomb-threats",
+  "topic": "Hundreds of schools in Germany and Denmark receive bomb threats",
+  "title": "Hundreds of Schools in Germany and Denmark Receive Bomb Threats",
+  "dek": "On November 23 2026 hundreds of schools in Germany and Denmark received email bomb threats as part of a wider European wave though none led to credible finds of explosives.",
+  "category": "World",
+  "tags": [
+    "germany",
+    "denmark",
+    "schools",
+    "bomb-threats"
+  ],
+  "body": "Hundreds of schools across Germany and Denmark received bomb threats sent by email on November 23 2026. The messages form part of the 2026 European bomb threat wave that has already reached other institutions on the continent. Police in both countries told schools to continue with normal operations while checks took place.\n\nNo credible explosives were found in the initial responses at any of the affected sites. Schools remained open as a precautionary measure to limit further upset for students and staff. This decision resulted in temporary disruption but produced no evacuations in most cases.\n\nParents and students were informed of the situation by school administrators on the same day. Law enforcement teams in Germany and Denmark began immediate investigations into the source of the emails. Authorities noted that similar threats have targeted other European institutions in recent weeks.\n\n## Cross-Border Coordination\n\nLaw enforcement across borders are coordinating responses to trace the origin of the messages. Officials in both countries stressed that the threats appear to be part of the same pattern seen elsewhere in Europe during 2026. Schools followed police guidance to keep daily routines in place wherever possible.\n\nThe events caused brief interruptions to lessons and schedules at many locations. No injuries or damage occurred because the threats did not involve real devices. Investigations continue with information shared between national agencies to identify those responsible.\n\nOrdinary families in the affected areas learned of the threats through direct contact from schools. The approach kept most children in classrooms while checks were completed. Further updates are expected once authorities complete their review of the emails.",
+  "sources": [
+    {
+      "title": "Hundreds of German schools received bomb threats",
+      "url": "https://www.reuters.com/world/hundreds-german-schools-received-bomb-threats-bild-reports-2026-11-23/"
+    }
+  ],
+  "publishedAt": "2026-11-23T18:24:30.533Z",
+  "models": {
+    "research": "grok-4.3",
+    "write": "grok-4.3"
+  },
+  "costUsd": 0.0043,
+  "hash": "b1af129378",
+  "image": {
+    "hero": {
+      "src": "/img/2026-11-23-hundreds-of-schools-in-germany-and-denmark-receive-bomb-threats-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 34006
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-hundreds-of-schools-in-germany-and-denmark-receive-bomb-threats-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 10256
+    },
+    "alt": "Empty classroom at dusk in a quiet vector illustration.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true
+  }
+}

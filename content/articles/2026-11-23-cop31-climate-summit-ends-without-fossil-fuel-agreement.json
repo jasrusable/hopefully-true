@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-23-cop31-climate-summit-ends-without-fossil-fuel-agreement",
+  "slug": "2026-11-23-cop31-climate-summit-ends-without-fossil-fuel-agreement",
+  "topic": "COP31 climate summit collapses without fossil fuel agreement",
+  "title": "COP31 climate summit ends without fossil fuel agreement",
+  "dek": "The UN climate conference in Antalya closed on November 22, 2026, after record overtime, with no deal on fossil fuels.",
+  "category": "Environment",
+  "tags": [
+    "climate",
+    "turkey",
+    "fossil-fuels",
+    "cop31"
+  ],
+  "body": "The United Nations climate conference COP31 ended in Antalya, Turkey, on November 22, 2026, without a final deal. Negotiations ran 44 hours past the scheduled close, a record, and the summit became the longest in UN climate history. It is the first such collapse in more than a decade.\n\nA COP, short for Conference of the Parties, is the main UN meeting where governments try to write shared rules on climate change. These deals are meant to work by consensus, which means every country in the room has to accept the text. That rule gives a small group real power: if they will not sign, there is no agreement.\n\nThis year the argument was about language. Delegates could not agree on how, or whether, to describe a phase-out of fossil fuels: coal, oil, and gas. No consensus was reached on key mitigation measures. Mitigation means steps meant to cut the gases that heat the planet, not only steps to live with the damage.\n\n## Where the deal came apart\n\nThe European Union and others rejected a draft text they saw as **greenwashing**. Greenwashing is wording that looks like climate action without requiring much of it. Saudi Arabia, Russia, and India opposed strong fossil fuel mentions.\n\nThe talks failed amid those fights and separate fights over finance, the money side of a climate deal. With neither the wording nor the money settled, there was no text everyone could accept.\n\nThat gap matters to people far from the hall. A final deal is how countries at the summit sign the same promise at once. Without one, this meeting produced no new shared plan on fossil fuels.\n\nPacific nations expressed despair over the outcome. Backlash also emerged in countries such as Australia.\n\n## What may come next\n\nSmaller bilateral or local climate actions may gain focus next. Bilateral means two countries agreeing with each other, instead of waiting for a text that every nation will sign. Local action means a city, a region, or a single government moving on its own. Those routes are narrower than a full UN deal, and they leave the fights over finance and fossil fuel references unresolved.\n\nThe rooms in Antalya stayed open long enough to set a record for length. In the odd accounting of these summits, that counted as a result. It was not the result on the agenda.",
+  "sources": [
+    {
+      "title": "COP31 climate talks fail to reach deal amid fossil fuel and money rows",
+      "url": "https://www.bbc.com/news/articles/c5y3n5k8p2zo"
+    },
+    {
+      "title": "Global climate summit collapses as countries fail to agree on moving away from fossil fuels",
+      "url": "https://www.cnn.com/2026/11/23/world/cop31-collapse-fossil-fuels-intl/index.html"
+    },
+    {
+      "title": "COP31 Talks Collapse in Turkey in a Clash Over Fossil Fuels",
+      "url": "https://www.nytimes.com/2026/11/23/climate/cop31-collapse.html"
+    }
+  ],
+  "publishedAt": "2026-11-23T18:22:05.692Z",
+  "models": {
+    "research": "grok-4.3",
+    "write": "grok-4.7"
+  },
+  "costUsd": 0.072,
+  "hash": "e71d771f20",
+  "image": {
+    "hero": {
+      "src": "/img/2026-11-23-cop31-climate-summit-ends-without-fossil-fuel-agreement-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 17572
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-cop31-climate-summit-ends-without-fossil-fuel-agreement-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 5464
+    },
+    "alt": "Empty conference table with an unlit candle, symbolizing failed climate talks.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true
+  }
+}

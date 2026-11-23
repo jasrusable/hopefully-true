@@ -1,0 +1,45 @@
+{
+  "id": "2026-11-23-tajikistan-starts-withdrawal-from-international-criminal-court",
+  "slug": "2026-11-23-tajikistan-starts-withdrawal-from-international-criminal-court",
+  "topic": "Tajikistan begins withdrawal from International Criminal Court",
+  "title": "Tajikistan Starts Withdrawal From International Criminal Court",
+  "dek": "Tajikistan began leaving the International Criminal Court on November 23, 2026, as the fourth country to take this step amid diplomatic efforts by the United States.",
+  "category": "Politics",
+  "tags": [
+    "tajikistan",
+    "icc",
+    "central-asia",
+    "sovereignty"
+  ],
+  "body": "Tajikistan formally started the process of withdrawing from the International Criminal Court on November 23, 2026. The move follows recent shifts in global relations and comes as part of wider diplomatic activity by the United States. It is the fourth country to begin such a withdrawal in this period.\n\nThe International Criminal Court is an institution that deals with serious crimes that cross national borders. Tajikistan has mentioned concerns over its own sovereignty in statements connected to the decision. Similar points have appeared in the reasons given by other countries that have also started to leave.\n\n## Impact on the Region\n\nThis change will reduce the number of member countries in Central Asia. The court will continue its work with the nations that remain. Analysts describe the pattern as part of larger realignments in how countries relate to one another on the international stage.\n\nThe United States has for years argued against the court having authority over its citizens. Other recent withdrawals share comparable motivations tied to national control. These steps occur against a background of changing alliances and priorities among governments.\n\nWithdrawal from the court normally takes one year to finish once the formal process begins. During that time Tajikistan will remain a member until the period ends. After completion the country will no longer take part in the court's activities or obligations.\n\nFor people outside government circles the development means one less participant from the region in efforts to address certain cross-border legal matters. The court itself keeps operating with its existing members and continues its established work. Observers note that such changes reflect how international arrangements adjust over time rather than stay fixed.\n\nThe process in Tajikistan follows the same path seen in the earlier cases. Each country has acted on its own timeline while citing its particular circumstances. The overall result leaves the court with fewer states from Central Asia than before these withdrawals started.",
+  "sources": [
+    {
+      "title": "Tajikistan becomes fourth country to withdraw ICC since US diplomatic push",
+      "url": "https://www.reuters.com/world/asia-pacific/tajikistan-becomes-fourth-country-withdraw-icc-since-us-diplomatic-push-2026-11-23/"
+    }
+  ],
+  "publishedAt": "2026-11-23T18:24:05.774Z",
+  "models": {
+    "research": "grok-4.3",
+    "write": "grok-4.3"
+  },
+  "costUsd": 0.0048,
+  "hash": "aa1bab8260",
+  "image": {
+    "hero": {
+      "src": "/img/2026-11-23-tajikistan-starts-withdrawal-from-international-criminal-court-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 26818
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-tajikistan-starts-withdrawal-from-international-criminal-court-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 6178
+    },
+    "alt": "Open gate with path leading away in a dusky valley.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true
+  }
+}

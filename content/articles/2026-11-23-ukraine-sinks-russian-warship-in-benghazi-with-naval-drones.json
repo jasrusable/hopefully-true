@@ -1,0 +1,53 @@
+{
+  "id": "2026-11-23-ukraine-sinks-russian-warship-in-benghazi-with-naval-drones",
+  "slug": "2026-11-23-ukraine-sinks-russian-warship-in-benghazi-with-naval-drones",
+  "topic": "Ukraine sinks Russian warship off Libya with naval drones",
+  "title": "Ukraine sinks Russian warship in Benghazi with naval drones",
+  "dek": "Ukrainian naval drones sank the Russian corvette Merkury in Benghazi, Libya, on or around 22 November 2026, well outside the Black Sea.",
+  "category": "World",
+  "tags": [
+    "ukraine",
+    "russia",
+    "libya",
+    "drones"
+  ],
+  "body": "Ukrainian forces used naval drones to strike the Russian corvette Merkury while it was docked in Benghazi, Libya, on or around 22 November 2026. The warship capsized and sank. A military helicopter was destroyed in the attack, and a Russian-flagged cargo ship was also struck in the same area. The details given for the Libya strike reported no immediate casualties.\n\nPresident Volodymyr Zelensky confirmed the operation and praised it as exemplary. The operation involved coordination by Ukrainian special forces. Satellite imagery confirmed the capsized vessel.\n\n## Far from the Black Sea\n\nUkraine and Russia are at war, and Ukrainian naval strikes have been tied to the Black Sea, the body of water along Ukraine's southern coast. Naval drones are unmanned boats, small craft with no crew aboard, used to hit ships. This operation expands those strikes far beyond that sea. Benghazi is a Libyan port on the Mediterranean coast of North Africa, a different sea and a long way from the earlier fighting.\n\nThe distance is why this matters to an ordinary reader. A Russian warship docked in Libya was still within reach, which is what long-range drone capability means in ordinary language. The raid shows Ukraine can hit a target in the Mediterranean, a sea well past the Black Sea. Russian officials warned of escalation after the incident, meaning the conflict could grow more serious, and the accounts so far do not say what they will do in reply.\n\n## What is known, and what is not\n\nA corvette is a small warship. The Merkury was docked, not moving at sea, when the drones hit. Ukraine has conducted similar naval strikes before, including attacks on the shadow fleet, a name for ships tied to Russian trade that are hard to track in public, so the method is familiar and the place is the change.\n\nThe cargo ship is a separate vessel from the corvette. Reports say it was struck in the same incident area, but they do not say it sank, and only the Merkury is described as capsizing and going under. The helicopter is described as destroyed, without a stated location, and the timing is given as on or around 22 November 2026 rather than a single fixed hour.\n\nA Russian corvette sank in a Libyan port, far from the Black Sea, and Ukraine's president has confirmed the operation. Satellite imagery shows the capsized ship. For readers far from both countries, a distant port did not keep the ship safe. Russian officials have warned of escalation, and that warning is the unfinished part of what happens next.",
+  "sources": [
+    {
+      "title": "Russian warship hit by Ukrainian drones in Libya, Zelensky says",
+      "url": "https://www.bbc.com/news/articles/c5y3n5k8p2zo"
+    },
+    {
+      "title": "Ukraine Sinks Russian Warship, Hits Cargo Vessels Far From Warzone",
+      "url": "https://www.wsj.com/articles/ukraine-sinks-russian-warship-hits-cargo-vessels-far-from-warzone-2026-11-23"
+    },
+    {
+      "title": "Ukrainian Attack Off Coast of Libya Shows Reach of Kyiv’s Naval Drones",
+      "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html"
+    }
+  ],
+  "publishedAt": "2026-11-23T18:20:23.286Z",
+  "models": {
+    "research": "grok-4.3",
+    "write": "grok-4.7"
+  },
+  "costUsd": 0.1642,
+  "hash": "3ff6f0e5fa",
+  "image": {
+    "hero": {
+      "src": "/img/2026-11-23-ukraine-sinks-russian-warship-in-benghazi-with-naval-drones-1200.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 15104
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-ukraine-sinks-russian-warship-in-benghazi-with-naval-drones-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 4332
+    },
+    "alt": "Empty harbor at dusk in flat vector style",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true
+  }
+}

@@ -1,0 +1,37 @@
+Hopefully True: future ideas
+=============================
+
+LATER (not part of the current build, don't implement yet)
+
+1. Same story, several AI models
+   - Run the same prompt on the same topic through each major AI provider
+     (xAI/Grok, Anthropic Claude, OpenAI, and others), so each one writes its
+     own version of the article.
+   - When reading an article, a global dropdown picks which provider's version
+     to show. The choice stays the same across the site.
+   - Purpose: let readers compare what different models say about the same
+     story when given the same prompt.
+
+2. Make the project open source
+   - Later, publish the repository publicly under an open-source licence.
+   - Before that: check the code and its git history for secrets, pick a
+     licence, and tidy up the README.
+   - The repo stays private for now.
+
+3. Accept donations
+   - Later, add a way for readers to donate, such as a donate button or a
+     donate page.
+   - Payment provider still to be decided.
+
+4. SEO
+   - Later, make the site easy for search engines to find and understand:
+     good titles and descriptions, structured data for articles, sitemap
+     and feed kept up to date.
+
+5. GEO (generative engine optimisation)
+   - Later, make the articles easy for AI search engines and assistants to
+     find, quote and cite correctly, with clear sources and dates.
+
+6. Accessibility
+   - Later, do a full accessibility review (screen readers, keyboard use,
+     contrast, zoom and reduced motion) and fix what it finds.

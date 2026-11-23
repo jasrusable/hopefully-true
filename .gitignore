@@ -1,0 +1,9 @@
+/out/
+.env*
+!.env.example
+node_modules/
+.DS_Store
+
+/scratch/
+/scratch-*/
+/data/

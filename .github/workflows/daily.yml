@@ -1,0 +1,113 @@
+name: Daily edition
+
+on:
+  schedule:
+    # 05:00 Europe/Zurich all year. GitHub cron is UTC, so one entry per DST state;
+    # the guard below skips the one that doesn't match today's Zurich offset.
+    - cron: '0 3 * * *'   # 05:00 CEST (summer, UTC+2)
+    - cron: '0 4 * * *'   # 05:00 CET (winter, UTC+1)
+  workflow_dispatch:
+    inputs:
+      generate:
+        description: 'Generate new articles (untick to just rebuild and deploy)'
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-edition
+  cancel-in-progress: false
+
+env:
+  PAGES_PROJECT: hopefully-true
+  PAGES_DOMAIN: hopefullytrue.jasonrussell.io
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Zurich-hour guard
+        id: guard
+        run: |
+          off=$(TZ=Europe/Zurich date +%z)
+          run=true
+          if [ "${{ github.event_name }}" = schedule ]; then
+            if [ "${{ github.event.schedule }}" = '0 3 * * *' ] && [ "$off" != +0200 ]; then run=false; fi
+            if [ "${{ github.event.schedule }}" = '0 4 * * *' ] && [ "$off" != +0100 ]; then run=false; fi
+          fi
+          echo "Zurich offset $off, run=$run"
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        if: steps.guard.outputs.run == 'true'
+
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        if: steps.guard.outputs.run == 'true'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        if: steps.guard.outputs.run == 'true'
+        run: npm ci --no-audit --no-fund
+
+      - name: Check the README shows the current prompts
+        if: steps.guard.outputs.run == 'true'
+        run: npm run check
+
+      - name: Generate today's articles
+        id: generate
+        if: steps.guard.outputs.run == 'true' && (github.event_name == 'schedule' || inputs.generate)
+        env:
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+        run: npm run daily
+
+      # Persist whatever was generated, even if a later step fails, so paid-for articles are never lost.
+      - name: Commit new articles
+        if: always() && steps.guard.outputs.run == 'true' && steps.generate.outcome != 'skipped'
+        run: |
+          git add content
+          if git diff --cached --quiet; then echo "no new content"; exit 0; fi
+          git config user.name 'hopefully-true-bot'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -q -m "Edition $(TZ=Europe/Zurich date +%F) [skip ci]"
+          git push
+
+      # Only reached if generation succeeded (or was skipped on purpose): a failed run never deploys.
+      - name: Build site
+        if: steps.guard.outputs.run == 'true'
+        env:
+          SITE_URL: https://${{ env.PAGES_DOMAIN }}
+        run: |
+          node src/build-site.mjs out
+          test -s out/index.html
+          test "$(ls out/a | wc -l)" -ge 1
+
+      - name: Ensure Pages project and custom domain
+        if: steps.guard.outputs.run == 'true'
+        env:
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CF_ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          api=https://api.cloudflare.com/client/v4/accounts/$CF_ACCOUNT/pages/projects
+          auth=(-H "Authorization: Bearer $CF_TOKEN" -H 'Content-Type: application/json')
+          code=$(curl -s -o /dev/null -w '%{http_code}' "${auth[@]}" "$api/$PAGES_PROJECT")
+          if [ "$code" = 404 ]; then
+            curl -fsS "${auth[@]}" -X POST "$api" -d "{\"name\":\"$PAGES_PROJECT\",\"production_branch\":\"main\"}" -o /dev/null
+            echo "created Pages project $PAGES_PROJECT"
+          elif [ "$code" != 200 ]; then echo "Pages API returned $code (check the token)"; exit 1; fi
+          if ! curl -fsS "${auth[@]}" "$api/$PAGES_PROJECT/domains" | grep -q "\"$PAGES_DOMAIN\""; then
+            curl -fsS "${auth[@]}" -X POST "$api/$PAGES_PROJECT/domains" -d "{\"name\":\"$PAGES_DOMAIN\"}" -o /dev/null
+            echo "added custom domain $PAGES_DOMAIN"
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.guard.outputs.run == 'true'
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy out --project-name=${{ env.PAGES_PROJECT }} --branch=main --commit-dirty=true

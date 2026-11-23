@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-23-india-pledges-1-62-billion-to-help-flood-hit-nepal-rebuild",
+  "slug": "2026-11-23-india-pledges-1-62-billion-to-help-flood-hit-nepal-rebuild",
+  "story": "India announced a $1.62 billion aid package to help Nepal rebuild after deadly August floods during Nepali Prime Minister Balendra Shah’s visit to New Delhi.",
+  "category": "World",
+  "title": "India pledges $1.62 billion to help flood-hit Nepal rebuild",
+  "dek": "India offered Nepal about $1.62 billion, mostly energy credit plus a smaller grant, during the Nepali prime minister’s first visit to Delhi after August floods.",
+  "tags": [
+    "india",
+    "nepal",
+    "floods",
+    "aid"
+  ],
+  "body": "India has promised Nepal a large sum of money to help rebuild after floods that killed and left thousands missing in August. The pledge came on Monday in New Delhi while Nepali Prime Minister Balendra Shah met Indian Prime Minister Narendra Modi. It was Shah’s first bilateral trip abroad since he took office in March.\n\n## Mostly credit, with a smaller grant\n\nThe package is worth 240 billion Nepali rupees. Major outlets put that at about $1.62 billion, one of the largest assistance commitments India has made to Nepal. Only part is a free grant. Roughly $377 million is for post-disaster reconstruction and new infrastructure. The larger share, about $1.24 billion, is a line of credit Nepal can borrow on easier terms, mainly for energy projects. Indian officials called the credit the first such facility counted in Indian rupees rather than dollars. Nepal had asked for more pure grants and less debt; the final mix went the other way.\n\nThe floods struck on 26 August when a huge mass of rock and ice broke away high in the mountains near the border with China’s Tibet region. Water, mud and debris raced down river valleys into Nepal’s Rasuwa and Nuwakot districts and also hit areas on the Chinese side. Reporting on the day of the announcement said more than 1,300 people were confirmed dead in Nepal and more than 5,000 remained missing; some accounts have put deaths nearer 1,500. Homes, dozens of bridges, roads, hydropower plants and a key border crossing with China were destroyed or badly damaged. Scientists link the collapse to a warming climate that has retreated glaciers and thawed frozen ground. Official damage assessments have estimated rebuilding costs near $4.8 billion, so the Indian package covers only part of the bill. A United Nations climate fund set aside $20 million in October.\n\n## Why the neighbours are paying attention\n\nThe timing matters because Nepal sits between India and China. India is Nepal’s largest trading partner, taking more than 60 percent of its imports, while China’s share is much smaller. The countries share an open border and deep cultural links, yet they also compete for influence and still disagree over a stretch of disputed territory along the western border. Putting most of the new money into energy suits both sides in practical ways. Nepal wants to sell far more electricity to India than the roughly 1,200 megawatts it exports now, toward a longer-term goal of 10,000 megawatts. India wants reliable power and a steady partner next door.\n\nThe visit produced smaller deals as well. The two sides signed eight agreements covering health, traditional medicine, satellite links, city planning, and training for officials and police. They opened a cross-border train service and adopted a vision paper that includes better sharing of glacier, weather and flood warnings. Extra air routes into Nepal’s newer airports, and a full settlement of the border, were left for later talks rather than resolved.\n\nWhat happens next is slower work. Announcements do not automatically become bridges or power lines. Similar projects between the two countries have stalled for years over costs and details. For families still waiting for news of the missing, and for a recovery measured in billions, the pledge is a real start, not a finished answer. As the high mountains continue to warm, shared warnings and careful management of the rivers may matter as much as the money itself.",
+  "sources": [
+    {
+      "title": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi",
+      "url": "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal"
+    },
+    {
+      "title": "India announces $1.62 billion package to bolster ties with flood-hit Nepal",
+      "url": "https://www.reuters.com/world/india/india-give-162-billion-economic-package-flood-hit-nepal-2026-11-23/"
+    },
+    {
+      "title": "On Balen Shah's First India Visit, Modi Rolls Out the Welcome Mat With $1.6 Billion in Aid for Nepal",
+      "url": "https://thewire.in/diplomacy/balen-shah-first-india-visit-red-carpet-1-6-billion-aid-nepal"
+    },
+    {
+      "title": "2026 Nepal–Tibet floods",
+      "url": "https://en.wikipedia.org/wiki/2026_Nepal%E2%80%93Tibet_floods"
+    }
+  ],
+  "publishedAt": "2026-11-23T21:35:43.952Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Symbolic view of a Himalayan river and rebuilding materials after floods.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-23-india-pledges-1-62-billion-to-help-flood-hit-nepal-rebuild-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-india-pledges-1-62-billion-to-help-flood-hit-nepal-rebuild-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

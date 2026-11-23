@@ -1,0 +1,42 @@
+[
+  {
+    "story": "United Nations climate talks in Antalya, Turkey, collapsed without a deal after the European Union and other countries rejected a draft that made no mention of fossil fuels.",
+    "category": "Environment",
+    "sources": [
+      "https://www.bbc.co.uk/news/articles/cky970n83rvjo",
+      "https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847"
+    ]
+  },
+  {
+    "story": "Ukrainian President Volodymyr Zelenskyy said naval drones sank a Russian warship and struck a cargo ship at a port in Benghazi, Libya.",
+    "category": "World",
+    "sources": [
+      "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya",
+      "https://www.reuters.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship-2026-11-23/"
+    ]
+  },
+  {
+    "story": "Nvidia’s board reinstated Jensen Huang as chief executive after President Donald Trump urged his return, less than two weeks after he resigned over personal scandals.",
+    "category": "Business",
+    "sources": [
+      "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/",
+      "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive"
+    ]
+  },
+  {
+    "story": "Democrat Chuck Hubbard defeated longtime Republican Representative Virginia Foxx in North Carolina after a recount, giving Democrats their largest House majority in decades.",
+    "category": "US",
+    "sources": [
+      "https://www.cnn.com/2026/11/22/politics/virginia-foxx-loses-reelection-chuck-hubbard",
+      "https://www.cbsnews.com/news/democrat-chuck-hubbard-defeats-gop-rep-virginia-foxx-north-carolina/"
+    ]
+  },
+  {
+    "story": "India announced a $1.62 billion aid package to help Nepal rebuild after deadly August floods during Nepali Prime Minister Balendra Shah’s visit to New Delhi.",
+    "category": "World",
+    "sources": [
+      "https://www.reuters.com/world/india/india-give-162-billion-economic-package-flood-hit-nepal-2026-11-23/",
+      "https://www.aljazeera.com/news/2026/11/23/india-pledges-1-6bn-in-flood-relief-for-nepal"
+    ]
+  }
+]

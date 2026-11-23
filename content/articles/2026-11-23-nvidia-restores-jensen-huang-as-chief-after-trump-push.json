@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-23-nvidia-restores-jensen-huang-as-chief-after-trump-push",
+  "slug": "2026-11-23-nvidia-restores-jensen-huang-as-chief-after-trump-push",
+  "story": "Nvidia’s board reinstated Jensen Huang as chief executive after President Donald Trump urged his return, less than two weeks after he resigned over personal scandals.",
+  "category": "Business",
+  "title": "Nvidia restores Jensen Huang as chief after Trump push",
+  "dek": "Nvidia’s board restored Jensen Huang as chief executive less than two weeks after he quit, following a push from President Trump and a sharp fall in the shares.",
+  "tags": [
+    "nvidia",
+    "jensen-huang",
+    "donald-trump",
+    "artificial-intelligence"
+  ],
+  "body": "Nvidia has restored Jensen Huang as chief executive less than two weeks after he resigned over personal scandals that raised national-security questions. On Monday the board voted unanimously to return him as president, chief executive and a director. President Donald Trump said he had pressed the directors. “I made the deal,” he told CNBC.\n\nHuang left on 12 November after admitting an extramarital affair, and after reports of relationships with a woman US officials suspect of Chinese intelligence ties and with Nvidia employees. The shares fell. Colette Kress, the finance chief, became interim leader. The board said it was not planning to bring him back.\n\nThat stance collapsed within days. Directors said weekend meetings satisfied them about his candor and ability to lead. Citing input from senior US officials, they said they were confident his return posed no national security risk. CNBC reported that a government briefing found no broken national-security laws, and that the share-price drop hurried the decision.\n\nAn independent inquiry into a possible foreign intelligence effort will still finish. Nvidia is also adding a board committee on export controls and seeking a chief compliance officer.\n\n## A very short holiday\n\nInvestors acted as if the famous leather jacket had only been out for cleaning. Shares rose by about a third, adding roughly $900 billion to $1 trillion by different counts, and broader US markets rose too. The bounce did not clearly erase every loss since the scandal began, but it showed how much of the artificial-intelligence boom rests on one company and on the founder who made it the main supplier of AI processors. Analysts said staying without him looked riskier for shareholders than the U-turn.\n\n## What remains open\n\nTrump said he spoke to the board directly and indirectly, that Huang did nothing wrong, and that the attorney general sees no evidence of unlawful conduct. Reports say Vice-President JD Vance joined the talks, and that Elon Musk and others had called for a return. Trump’s portfolio has included millions of dollars in Nvidia stock. The White House says he does not control those accounts.\n\nOther questions are not closed. Authorities are still looking at whether advanced chips reached China through Megaspeed, a Singapore firm once linked to Alice Huang, the woman in the intelligence reports. Those claims, as described by the New York Times and others, are not a court finding and have been disputed. Senator Elizabeth Warren called the reinstatement reckless and said Congress still needs answers on export rules before Huang faces lawmakers in early December.\n\nThe likeliest account is that the board reversed itself under a falling market and clear White House pressure, after officials signaled they saw no national-security offence by Huang. Whether that view holds is not yet public. The inquiry continues, and so does the sale of chips the AI industry has not learned to replace.",
+  "sources": [
+    {
+      "title": "Huang returns as Nvidia CEO after Trump intervention in abrupt board reversal",
+      "url": "https://www.reuters.com/technology/nvidia-reinstates-jensen-huang-ceo-2026-11-23/"
+    },
+    {
+      "title": "Jensen Huang reinstated as Nvidia CEO after Trump intervenes",
+      "url": "https://www.theguardian.com/technology/2026/nov/23/jensen-huang-reinstated-as-nvidia-chief-executive"
+    },
+    {
+      "title": "Jensen Huang reinstated as Nvidia CEO. Stock skyrockets 33%",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+    },
+    {
+      "title": "Nvidia reinstates Jensen Huang as CEO: Live updates",
+      "url": "https://www.cnn.com/2026/11/23/business/live-news/jensen-huang-reinstated-as-ceo-of-nvidia"
+    }
+  ],
+  "publishedAt": "2026-11-23T21:29:44.518Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Empty office chair with a leather jacket and a computer chip.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-23-nvidia-restores-jensen-huang-as-chief-after-trump-push-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-nvidia-restores-jensen-huang-as-chief-after-trump-push-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

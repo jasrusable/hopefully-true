@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-23-ukraine-s-drones-sink-a-russian-warship-in-libya",
+  "slug": "2026-11-23-ukraine-s-drones-sink-a-russian-warship-in-libya",
+  "story": "Ukrainian President Volodymyr Zelenskyy said naval drones sank a Russian warship and struck a cargo ship at a port in Benghazi, Libya.",
+  "category": "World",
+  "title": "Ukraine's drones sink a Russian warship in Libya",
+  "dek": "Zelenskyy said Ukrainian naval drones sank a Russian corvette in Benghazi and hit a cargo ship said to carry weapons.",
+  "tags": [
+    "ukraine",
+    "russia",
+    "libya",
+    "drones"
+  ],
+  "body": "Ukrainian forces used explosive unmanned boats to attack Russian ships in a Libyan port, and the evidence suggests they sank one of them. President Volodymyr Zelenskyy said on Monday that seven Ukrainian-made naval drones struck the corvette Merkury at Benghazi’s naval base early on Sunday. Satellite images show the ship capsized against the dock, with only its bow still above the water.\n\nZelenskyy called the raid exemplary and said a Ka-27 helicopter was destroyed along with the vessel. Ukraine’s security service said the drones were carried to the area on a larger mothership and then launched. The same operation also hit the cargo ship MV Angara, which Kyiv says Russia was using to transport weapons. Video released by Ukraine shows drones closing in at night, and Reuters said it verified footage of fire and smoke.\n\nEastern Libyan authorities, who control Benghazi and maintain close ties with Moscow, confirmed that a Russian ship docked for fuel and supplies had been hit. Medical sources told Reuters that about ten people, Russians and Libyans, suffered slight injuries. Separate claims that some people were killed have not been confirmed by those reports, so the full human cost is still unclear.\n\nThe Kremlin has not confirmed the loss of the ship. Spokesman Dmitry Peskov said Russia had taken note of Zelenskyy’s statement and that the defence ministry was handling the matter. He described Ukrainian attacks on Russian vessels, including a cargo ship struck a day earlier in the Gulf of Finland, as a very dangerous trend, and said Russia’s daily strikes on Ukraine already carry painful consequences and will continue.\n\nLibya has been divided for years. The east, led by commander Khalifa Haftar, has hosted Russian support and served as a waypoint for Moscow’s operations in Africa. Reports have placed Ukrainian drone specialists in the west, though officials there have denied some of the claims. Eastern authorities suspect the boats were launched from western Libya and have asked the United Nations for an investigation, while the UN mission and the government in Tripoli both said Libya must not become a battleground for a foreign war.\n\nThe strike matters because a relatively cheap drone boat reached a modern warship that was not even under way. Merkury, commissioned in 2023, had been singled out by President Vladimir Putin as evidence Russia was building up its fleet, and Russian television once claimed its stealth design made it invisible to radar. Invisibility did not help much against a boat that simply drove into the side, some 2,400 kilometres from the front in Ukraine. Russian ships and supply routes now look exposed even in a partner’s harbour, and what happens next depends on how Moscow answers and whether Libya’s rival camps can keep the fighting off their own coast.",
+  "sources": [
+    {
+      "title": "Ukraine confirms it used naval drones to strike two Russian ships off Libya",
+      "url": "https://www.theguardian.com/world/2026/nov/23/ukraine-naval-drones-strike-russian-warship-libya"
+    },
+    {
+      "title": "Ukraine sinks Russian warship in Libya as conflict spreads beyond Europe",
+      "url": "https://www.reuters.com/world/europe/zelenskiy-says-ukraine-sank-russian-corvette-near-libyas-coast-hit-cargo-ship-2026-11-23/"
+    },
+    {
+      "title": "Ukraine claims drone strikes on Russian ships off Libya: What do we know?",
+      "url": "https://www.aljazeera.com/news/2026/11/23/russian-ships-hit-by-drones-off-libya-coast-what-do-we-know"
+    },
+    {
+      "title": "Russian corvette Merkury",
+      "url": "https://en.wikipedia.org/wiki/Russian_corvette_Merkury"
+    }
+  ],
+  "publishedAt": "2026-11-23T21:26:35.351Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Small boat near a partly sunken ship in a quiet harbour.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-23-ukraine-s-drones-sink-a-russian-warship-in-libya-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-23-ukraine-s-drones-sink-a-russian-warship-in-libya-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

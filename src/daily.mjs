@@ -63,6 +63,7 @@ for (const story of todo) {
     written++;
     console.log(`wrote ${id} ($${usd.toFixed(3)} for the text)`);
   } catch (err) {
+    spent += err.usd || 0; // a failed answer still costs money
     console.error(`could not write "${story.story}": ${err.message}`);
   }
 }

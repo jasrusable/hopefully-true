@@ -33,13 +33,17 @@ export async function ask({ model, prompt, schema, search = [], maxSearches = 5 
     text: { format: { type: 'json_schema', name: 'answer', schema, strict: true } },
   });
   // Reasoning models also send 'reasoning' items (encrypted, never needed here); read only the message.
-  const text = json.output.filter(o => o.type === 'message').flatMap(o => o.content).map(c => c.text || '').join('');
+  const parts = json.output.filter(o => o.type === 'message').flatMap(o => o.content).map(c => c.text || '').filter(Boolean);
   // Every page the search tools actually returned, so callers can drop any link the model made up.
   const seen = new Set(json.output.flatMap(o => [
     ...(o.action?.sources || []).map(x => x.url),
     ...(o.content || []).flatMap(c => (c.annotations || []).map(a => a.url)),
   ]).filter(Boolean).map(normalizeUrl));
-  return { answer: JSON.parse(text), usd: usd(json.usage), seen };
+  // Usually one JSON text; if the model sent more than one, use the last part that parses.
+  let answer;
+  for (const t of [parts.join(''), ...parts.slice().reverse()]) { try { answer = JSON.parse(t); break; } catch {} }
+  if (answer === undefined) throw Object.assign(new Error('the model did not return valid JSON'), { usd: usd(json.usage) });
+  return { answer, usd: usd(json.usage), seen };
 }
 
 // "https://www.example.com/a/b/?utm=1" and "http://example.com/a/b" are the same page.

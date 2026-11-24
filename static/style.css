@@ -113,7 +113,9 @@ main{min-height:60vh;padding-bottom:1rem}
 
 @media (max-width:40rem){
   body{font-size:1.125rem}
-  .top{padding-top:1rem;position:relative;flex-wrap:nowrap;align-items:flex-start}
+  .top{padding-top:1rem;position:relative;align-items:center;row-gap:0}
+  .brandbox{display:contents} /* title and search icon share a row; the tagline gets the full width below */
+  .tagline{flex:0 0 100%;order:1;text-wrap:pretty}
   .search-open{display:inline-flex}
   .search{display:none}
   .top.searching .search-open{visibility:hidden}

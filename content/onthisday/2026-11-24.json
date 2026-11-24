@@ -1,0 +1,36 @@
+{
+  "id": "2026-11-24-researchers-find-ancient-bones-in-ethiopian-hills",
+  "slug": "2026-11-24-researchers-find-ancient-bones-in-ethiopian-hills",
+  "date": "2026-11-24",
+  "year": 1974,
+  "title": "Researchers find ancient bones in Ethiopian hills",
+  "dek": "Two American scientists spotted bones of a small early ancestor while searching the Hadar hills in Ethiopia’s Afar region.",
+  "body": "Paleoanthropologist Donald Johanson and graduate student Tom Gray were surveying the Hadar site in Ethiopia’s Afar region when a chance glance changed their day. They had already spent a hot morning mapping the ground. Heading back to their Land Rover, Johanson suggested cutting through a nearby gully.\n\nHe looked over his shoulder and saw a small piece of forearm bone on the slope. He knew at once it belonged to an early human relative, not to an antelope or other animal. Farther up the hill lay more fragments: skull pieces, a thigh bone, ribs, part of a pelvis, and a lower jaw. The bones were small and seemed to come from one individual.\n\nThat night the camp celebrated. A tape of the Beatles song “Lucy in the Sky with Diamonds” played again and again. By the end of the evening the skeleton had a name: Lucy.\n\nThe bones already hint at upright walking. The angle of the thigh and the shape of the knee and pelvis suggest this ancestor could balance on one leg at a time. The team plans to recover every fragment from the slope in the days ahead. The ground here is ancient, and the researchers believe the remains may be millions of years old.\n\nThis discovery still matters because it showed that members of our family tree walked upright more than three million years ago, well before large brains evolved. Lucy, called Dinkinesh in Ethiopia, remains one of the most studied fossils in the story of human origins.",
+  "sources": [
+    {
+      "title": "“Lucy” fossils discovered",
+      "url": "https://www.history.com/this-day-in-history/november-24/lucy-fossil-discovered"
+    },
+    {
+      "title": "Lucy's Story | Institute of Human Origins",
+      "url": "https://iho.asu.edu/node/15"
+    }
+  ],
+  "image": {
+    "alt": "Small fossil bones on a dry hillside",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-researchers-find-ancient-bones-in-ethiopian-hills-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-researchers-find-ancient-bones-in-ethiopian-hills-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  },
+  "publishedAt": "2026-11-24T06:13:17.260Z",
+  "model": "grok-4.7"
+}

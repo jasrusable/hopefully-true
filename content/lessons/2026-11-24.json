@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-24-epictetus",
+  "slug": "2026-11-24-epictetus",
+  "date": "2026-11-24",
+  "name": "Epictetus",
+  "born": "c. 50 AD",
+  "died": "c. 135 AD",
+  "quote": "Men are disturbed not by things, but by the views which they take of things.",
+  "about": "Epictetus taught that a person can stay steady no matter what the world does. He lived that idea under hard conditions. Born around the year 50 in Hierapolis, a city in Phrygia in what is now Turkey, he was taken to Rome as a slave. His owner was Epaphroditus, a freedman close to the emperor Nero. While still enslaved he learned Stoic philosophy from Musonius Rufus. He was lame in one leg. Later freed, he taught in Rome until the emperor Domitian expelled the philosophers. He moved to Nicopolis in Greece and kept a school there until he died around the year 135.\n\nHe left no writings of his own. A student named Arrian sat in his classes, took careful notes of what he heard, and later published them. The short book called the Enchiridion, or Handbook, draws the main points together. The line chosen here opens the fifth chapter of that handbook, in the English translation published by Thomas Wentworth Higginson in 1890.\n\nThe words are direct. People are not upset by events. They are upset by the opinions they form about events. In the sentences that follow, Epictetus uses death as the example. Death is not terrible in itself. If it were, Socrates would have found it terrible. The fear comes from the judgment that death is something to dread. Whenever we feel hindered, disturbed, or grieved, he says, we should not blame other people. We should look at our own views.\n\nThat distinction is the practical heart of his Stoicism. Some matters lie within our power: what we think, what we choose, how we respond. Body, money, reputation, and the actions of others lie outside it. Confusing the two is what produces most of the trouble. A broken cup, a lost job, an insult, even exile or slavery, can be met without inner collapse if the judgment stays clear. Epictetus had known slavery and physical limitation. He did not treat them as small things. He treated the mind’s response as the thing no one else could seize.\n\nThe line still lands because daily life is full of things we did not choose. Traffic, illness, a sharp word, news that changes a plan. The event arrives on its own. The disturbance that may follow is shaped by the view we take of it. Epictetus does not promise that changing the view is quick or easy. He only insists that the view is ours to examine, and that freedom begins there rather than in the hope that the world will arrange itself to suit us.",
+  "painting": "In the manner of a Roman fresco from the early second century, the painting opens onto a quiet stretch of the Ionian coast. Pale water lies flat under a high, even sky. Low hills rise behind a small harbor, their slopes marked by dark olives and a thin white road. Nothing dramatic happens. The light is clear, the distances measured, and the whole view waits for whoever looks at it to decide what it means.",
+  "source": "https://en.wikisource.org/wiki/The_Works_of_Epictetus,_His_Discourses,_in_Four_Books,_the_Enchiridion,_and_Fragments/The_Enchiridion",
+  "image": {
+    "alt": "Roman-style fresco of a calm coastal landscape with hills, olives, and a harbor.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-epictetus-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-epictetus-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  },
+  "publishedAt": "2026-11-24T05:55:53.184Z",
+  "model": "grok-4.7"
+}

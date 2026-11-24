@@ -1,8 +1,8 @@
 // The greeting on the front page, in the reader's own time of day.
 (function(){
   var g=document.getElementById('greeting');if(!g)return;
-  var d=new Date(),h=d.getHours(),hi=h<5?'Good evening':h<12?'Good morning':h<18?'Good afternoon':'Good evening';
-  g.textContent=hi+' · '+d.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long'});
+  var h=new Date().getHours(),hi=h<5||h>=22?'Good night':h<12?'Good morning':h<17?'Good afternoon':'Good evening';
+  g.textContent=hi; // each day below has its own date heading
 })();
 
 // Live search: the search box in the header filters the stories on this page as you type.
@@ -11,6 +11,8 @@
       results=document.getElementById('search-results'),page=document.getElementById('page-content'),
       status=document.getElementById('search-status'),pills=[].slice.call(document.querySelectorAll('.cats a')),
       current=pills.filter(function(a){return a.hasAttribute('aria-current')})[0],data=null,timer=null;
+  // On narrow screens the menu scrolls sideways; make sure the current section (e.g. History, at the end) is in view.
+  if(current)current.scrollIntoView({block:'nearest',inline:'nearest'});
   if(!form||!q||!results||!page)return;
   function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function fmt(d){return new Date(d).toLocaleDateString('en-GB',{timeZone:'Europe/Zurich',day:'numeric',month:'short'})}

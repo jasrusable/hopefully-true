@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-24-uk-recognises-rohingya-genocide-and-sanctions-military-leaders",
+  "slug": "2026-11-24-uk-recognises-rohingya-genocide-and-sanctions-military-leaders",
+  "story": "The United Kingdom formally recognised the Rohingya genocide and sanctioned five senior Myanmar military leaders following an International Court of Justice ruling.",
+  "category": "World",
+  "title": "UK recognises Rohingya genocide and sanctions military leaders",
+  "dek": "Britain has recognised the Rohingya genocide following a world court ruling and placed sanctions on five senior Myanmar military officers.",
+  "tags": [
+    "myanmar",
+    "rohingya",
+    "united-kingdom",
+    "genocide"
+  ],
+  "body": "The United Kingdom has formally recognised that Myanmar committed genocide against the Rohingya people. Foreign Secretary Ed Miliband told Parliament on 23 November that a ruling by the International Court of Justice met Britain’s long-standing test: a reasoned judgment from a competent court after a proper process.\n\nOn 19 November the court decided, by nine votes to six, that Myanmar’s security forces committed genocide during 2017 clearance operations in northern Rakhine State. Judges found the forces killed about 10,000 Rohingya, carried out widespread sexual violence and extreme violence against children, and attacked civilians as they fled. The only reasonable inference, the court said, was an intention to destroy a substantial part of the Rohingya group. More than 700,000 people fled to Bangladesh, where camps still hold over a million.\n\nThis is the first time the International Court of Justice has held a state responsible for genocide. The case now joins the Holocaust, Rwanda, Srebrenica, acts in Cambodia and crimes against the Yazidi on the UK’s list of acknowledged genocides.\n\n## What the judges ordered\n\nThe judgment binds Myanmar. The court required the country to stop violations, investigate and punish those responsible, prevent any repeat, and provide reparations. Those include compensation, still to be calculated, and steps toward the safe and voluntary return of displaced people and the reuniting of families. Myanmar has two years to report on what it does.\n\nMyanmar’s foreign ministry called the ruling a great disappointment and unfair. Officials said the operations were limited counter-terrorism actions, not genocide, and that returns from Bangladesh would happen only when conditions allow. There is no public commitment to comply. President Min Aung Hlaing, who commanded the military in 2017, remains in office and was already under UK sanctions.\n\nThe court has no force of its own to make anyone obey. The Security Council could be asked to act, yet China and Russia have often blocked strong steps against Myanmar. Whether that changes is not yet clear.\n\n## Britain’s measures\n\nThe UK sanctioned five senior officers for roles in recent repression and civilian killings, including an airstrike on a Rakhine hospital that killed 33 people, among them a baby. The measures freeze assets and ban travel. Ministers also plan legislation, not yet in force, to restrict aviation fuel supplies used in airstrikes.\n\nAn extra £5 million will support food, water, healthcare and protection for about 350,000 people in Rakhine. Up to £3 million more will help gather evidence and assist survivors seeking justice. Britain has called Security Council talks and joined Australia, Canada, The Gambia and others in urging full compliance with the judgment.\n\nThe recognition gives survivors a clear legal record that the 2017 campaign was genocide. It may influence other cases before the same court. It does not, by itself, stop the fighting, empty the camps, or compel a government that rejects the verdict to change course. Those results depend on whether other states treat defiance as something that should cost the regime, rather than a document to note and set aside.",
+  "sources": [
+    {
+      "title": "UK sanctions top Myanmar military leaders after Rohingya genocide ruling",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo"
+    },
+    {
+      "title": "UK leads global action with major new measures against Myanmar military following landmark genocide judgment",
+      "url": "https://www.gov.uk/government/news/uk-leads-global-action-with-major-new-measures-against-myanmar-military-following-landmark-genocide-judgment"
+    },
+    {
+      "title": "Foreign Secretary Statement to the House of Commons: 23 November 2026",
+      "url": "https://www.gov.uk/government/speeches/foreign-secretary-statement-to-the-house-of-commons-23-november-2026"
+    },
+    {
+      "title": "World’s top court finds Myanmar guilty of genocide against Rohingya",
+      "url": "https://news.un.org/en/story/2026/11/1168836"
+    },
+    {
+      "title": "Myanmar calls UN court's Rohingya genocide ruling a 'great disappointment'",
+      "url": "https://www.reuters.com/world/asia-pacific/myanmar-calls-icj-ruling-genocide-unfair-2026-11-20/"
+    }
+  ],
+  "publishedAt": "2026-11-24T05:10:09.728Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Brass scales, a folded map and an unlit candle on a table.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-uk-recognises-rohingya-genocide-and-sanctions-military-leaders-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-uk-recognises-rohingya-genocide-and-sanctions-military-leaders-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "2026-11-24-turkey-says-pkk-left-14-more-shelters-in-iraq",
+  "slug": "2026-11-24-turkey-says-pkk-left-14-more-shelters-in-iraq",
+  "story": "Turkish intelligence said the Kurdistan Workers' Party withdrew from 14 more bases in northern Iraq as part of an ongoing peace process with Turkey.",
+  "category": "World",
+  "title": "Turkey says PKK left 14 more shelters in Iraq",
+  "dek": "Turkish officials say the Kurdish group emptied 14 mountain shelters in northern Iraq, a step in a slow peace process that is not yet finished.",
+  "tags": [
+    "turkey",
+    "iraq",
+    "pkk",
+    "peace-process"
+  ],
+  "body": "Turkish officials said on Monday that the Kurdistan Workers’ Party had left 14 more shelters in the mountains of northern Iraq. President Recep Tayyip Erdoğan went further, saying three long-contested border areas were now clear. The claim fits a slow peace process that has largely stopped the fighting inside Turkey. It is not, on the evidence so far, proof that the conflict is over.\n\n## What Ankara announced\n\nSecurity sources, the usual public face of Turkey’s MIT intelligence service, told state media that the group emptied 14 shelter areas in the Hakurk region by 18 November. Hakurk, also spelled Khwakurk, sits where Iraq, Turkey and Iran meet. It has been a rear base for years, and a frequent target of Turkish strikes.\n\nThe named sites include ammunition stores, a place described as a hospital, a tailoring workshop, and positions named after figures in the group. Turkey’s defence ministry said the caves would be made unusable, so nobody can simply move back in. With four sites left in the Metina area on 8 October, officials put the total at 18 since early last month.\n\nErdoğan said he had “good news” over the weekend: 14 more caves in Khwakurk had been evacuated, and with that Khwakurk, Zap and Metina had all been cleared. He said Turkey would not take a step backwards.\n\n## What is actually known\n\nOutside reporters have not confirmed this list on the ground. The PKK has not named these 14 places, and Turkish sources did not say weapons were handed over there.\n\nWhat the group has said points the same way, only more broadly. Earlier in November it said fighters had left more than 10 positions near the Turkish border over two months, and that all its fighters had left Turkey in October. Last month both sides confirmed the withdrawal from four sites in Metina.\n\nA pullback from the border mountains is therefore likely real. Erdoğan’s stronger claim, that three whole regions are fully cleared, is Ankara’s assessment, not a fact checked by others. The older stronghold in the Qandil mountains, farther from the border, is not what this announcement covers.\n\n## Why it still matters\n\nThe conflict began in 1984. Estimates of the dead run from about 40,000 to at least 50,000. Turkey, the United States and the European Union list the PKK as a terrorist organisation. A previous peace effort collapsed in 2015.\n\nThis round began in late 2024, when Devlet Bahçeli, leader of a nationalist party allied to Erdoğan, urged jailed PKK founder Abdullah Öcalan to call for an end to the armed campaign. Öcalan did so in February 2025. The group said in May 2025 that it would disband, and fighters burned some weapons in northern Iraq that July. Parliament passed a law in August 2026 that can suspend some related cases, but only after the National Security Council confirms that the group has disarmed and dissolved.\n\nThat confirmation has not happened. Officials have spoken of a council meeting as soon as Friday, though the date is not official. On Sunday, lawmakers from the pro-Kurdish DEM party visited Öcalan and said his prison conditions had improved. He called the process a threshold, and warned that crossing it would take hard work. The August law does not settle his own fate.\n\nCritics say the guns have gone quieter without the political opening many Kurds expected. The government says a problem this old cannot be closed in a few months. Empty border caves make a quick return to raids harder, especially if Turkey seals them. That is useful. It is not the same as a verified handover of weapons, or a political deal both sides trust.",
+  "sources": [
+    {
+      "title": "Turkey says PKK evacuated 14 more bases in northern Iraq",
+      "url": "https://www.al-monitor.com/originals/2026/11/turkey-says-pkk-evacuated-14-more-bases-northern-iraq"
+    },
+    {
+      "title": "Turkiye says PKK have evacuated 14 more northern Iraq bases",
+      "url": "https://www.arabnews.com/middle-east/turkiye-says-pkk-have-evacuated-14-more-northern-iraq-bases-3013730"
+    },
+    {
+      "title": "PKK vacates 14 more camps in northern Iraq, Turkish security sources say",
+      "url": "https://www.turkishminute.com/2026/11/23/pkk-vacates-14-more-camps-in-northern-iraq-turkish-security-sources-say/"
+    },
+    {
+      "title": "Erdoğan Says Khwakurk, Zap and Metina Have Been Cleared Following PKK Evacuations",
+      "url": "https://www.kurdistan24.net/en/story/955094"
+    },
+    {
+      "title": "Terror group PKK vacates 14 more shelters in northern Iraq's Hakurk region",
+      "url": "https://www.anews.com.tr/turkey/2026/11/23/terror-group-pkk-vacates-14-more-shelters-in-northern-iraqs-hakurk-region"
+    }
+  ],
+  "publishedAt": "2026-11-24T05:08:03.505Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Sealed cave entrances on a quiet mountain ridge.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-turkey-says-pkk-left-14-more-shelters-in-iraq-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-turkey-says-pkk-left-14-more-shelters-in-iraq-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

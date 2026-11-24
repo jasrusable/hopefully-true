@@ -1,0 +1,42 @@
+[
+  {
+    "story": "Turkish intelligence said the Kurdistan Workers' Party withdrew from 14 more bases in northern Iraq as part of an ongoing peace process with Turkey.",
+    "category": "World",
+    "sources": [
+      "https://www.arabnews.com/middle-east/turkiye-says-pkk-have-evacuated-14-more-northern-iraq-bases-3013730",
+      "https://www.al-monitor.com/originals/2026/11/turkey-says-pkk-evacuated-14-more-bases-northern-iraq"
+    ]
+  },
+  {
+    "story": "The United Kingdom formally recognised the Rohingya genocide and sanctioned five senior Myanmar military leaders following an International Court of Justice ruling.",
+    "category": "World",
+    "sources": [
+      "https://www.bbc.co.uk/news/articles/c6wy4ng1rznxo",
+      "https://www.gov.uk/government/news/uk-leads-global-action-with-major-new-measures-against-myanmar-military-following-landmark-genocide-judgment"
+    ]
+  },
+  {
+    "story": "California Representative Jimmy Gomez said he will resign from Congress on 1 December after the House Ethics Committee found substantial evidence of sexual misconduct with a staffer.",
+    "category": "US",
+    "sources": [
+      "https://www.cnn.com/2026/11/23/politics/house-ethics-committee-reports-jimmy-gomez",
+      "https://www.politico.com/news/2026/11/23/jimmy-gomez-resigns-sexual-misconduct-01180912"
+    ]
+  },
+  {
+    "story": "CrowdStrike agreed to buy cloud security firm Zscaler in an all-stock deal worth about $44 billion.",
+    "category": "Business",
+    "sources": [
+      "https://www.ft.com/content/762bd05d-8e20-4abf-9bc5-4e6f9bf628cb",
+      "https://www.csoonline.com/article/4252013/crowdstrike-buys-missing-network-security-piece-in-43-9b-zscaler-deal.html"
+    ]
+  },
+  {
+    "story": "University of Copenhagen researchers mapped the complete biosynthetic pathway of the cancer drug paclitaxel and produced it in tobacco plants at levels comparable to yew tree bark.",
+    "category": "Science",
+    "sources": [
+      "https://www.eurekalert.org/news-releases/1153014",
+      "https://cen.acs.org/biological-chemistry/cancer/Complete-biosynthetic-pathway-Taxol-finally/104/web/2026/11"
+    ]
+  }
+]

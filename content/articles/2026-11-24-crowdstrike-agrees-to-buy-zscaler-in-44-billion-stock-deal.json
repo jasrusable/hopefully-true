@@ -1,0 +1,54 @@
+{
+  "id": "2026-11-24-crowdstrike-agrees-to-buy-zscaler-in-44-billion-stock-deal",
+  "slug": "2026-11-24-crowdstrike-agrees-to-buy-zscaler-in-44-billion-stock-deal",
+  "story": "CrowdStrike agreed to buy cloud security firm Zscaler in an all-stock deal worth about $44 billion.",
+  "category": "Business",
+  "title": "CrowdStrike agrees to buy Zscaler in $44 billion stock deal",
+  "dek": "CrowdStrike will acquire Zscaler for about $43.9 billion in stock, uniting device and network security as AI threats grow.",
+  "tags": [
+    "crowdstrike",
+    "zscaler",
+    "cybersecurity",
+    "mergers"
+  ],
+  "body": "CrowdStrike has agreed to buy cloud security firm Zscaler for about $43.9 billion in stock, the biggest deal the cybersecurity industry has recorded. The companies announced the agreement on 23 November 2026.\n\nCrowdStrike’s Falcon software watches devices such as laptops, phones and servers for attacks. Zscaler checks the connections those devices make, using a zero-trust rule that verifies every user and program instead of trusting the network. The firms already share more than 2,000 customers and have worked together for years. Their chiefs say customers wanted one company covering both.\n\nZscaler shareholders will receive 1.135 CrowdStrike shares for each share they own. At the 20 November closing price that was worth about $260, a premium of roughly 34 percent. CrowdStrike owners would hold about 84 percent of the combined firm afterward. The offer is shares, not cash, so its value moves with CrowdStrike’s stock price. On the news CrowdStrike shares fell about 9 percent while Zscaler rose more than 17 percent, still short of the headline figure. Paying with stock that drops the same day is a little like a coupon that shrinks before you reach the till.\n\n## One platform for faster threats\n\nGeorge Kurtz, CrowdStrike’s chief executive, said the deal would create a single system to deploy and control artificial intelligence safely. Jay Chaudhry, who founded Zscaler, called zero trust essential now that AI agents—programs acting on their own—are a new weak link. They argue that traditional firewalls miss much of the traffic flowing directly between users, applications and these agents. The combination is meant to put both device and network controls in an attacker’s path.\n\nTogether the companies expect to start with more than $10 billion in annual recurring revenue. CrowdStrike looks for $500 million a year in cost savings within 18 to 24 months and about $1 billion in added revenue within 30 months, largely by reaching some 8,000 Zscaler customers that do not yet buy Falcon. It says the deal expands its addressable market by more than $185 billion. Chaudhry and affiliates, holding about 34 percent of Zscaler, have agreed to support the vote. He will continue leading the Zscaler business and join CrowdStrike’s board, while Kurtz runs the whole company.\n\n## What happens next\n\nThe deal is expected to close in the second half of CrowdStrike’s fiscal 2028. Fiscal years at the company end on 31 January, placing that period between August 2027 and January 2028. It still requires Zscaler shareholder approval and regulatory clearance. The businesses will run separately until then. Zscaler would owe a $1.4 billion fee if it drops the deal for a rival bid.\n\nEveryday users will not see a new app appear. The firms that protect banks, hospitals and public networks are consolidating so they can cover more ground against AI-powered attacks. A single supplier might catch threats that cross from a laptop into the network faster. It can also leave customers with fewer choices and a larger problem if one system fails. Analysts note that the tools still run separately, so any future shared setup would need care to stop one fault from hitting both the device and the connection.\n\nShare prices can still change what the offer is worth, and regulators have not yet spoken. The coming year will test whether joining these two strengths makes the connected world harder to break into.",
+  "sources": [
+    {
+      "title": "CrowdStrike to Acquire Zscaler, Bringing Network Security and Zero Trust to the Falcon Platform",
+      "url": "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-to-acquire-zscaler-bringing-network-security-and-zero-trust-to-the-falcon-platform/"
+    },
+    {
+      "title": "CrowdStrike snaps up Zscaler in $44 billion deal as cyber threats mount",
+      "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/"
+    },
+    {
+      "title": "CrowdStrike buys missing network security piece in $43.9B Zscaler deal",
+      "url": "https://www.csoonline.com/article/4252013/crowdstrike-buys-missing-network-security-piece-in-43-9b-zscaler-deal.html"
+    },
+    {
+      "title": "CrowdStrike CEO defends $44 billion Zscaler deal",
+      "url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-deal-ceo-george-kurtz.html"
+    }
+  ],
+  "publishedAt": "2026-11-24T05:15:58.681Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0"
+  },
+  "image": {
+    "alt": "Two shields joining above a laptop and network lines.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-crowdstrike-agrees-to-buy-zscaler-in-44-billion-stock-deal-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-crowdstrike-agrees-to-buy-zscaler-in-44-billion-stock-deal-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

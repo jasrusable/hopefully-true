@@ -98,26 +98,30 @@ const lead = (a, h = 'h2') => `<article class="lead">${a.image ? `<a href="${url
 ${kicker(a)}<${h}><a href="${url(a)}">${esc(a.title)}</a></${h}>
 <p class="dek">${esc(a.dek)}</p>
 </article>`;
-// The history lesson preview, at the end of a day on the front page and on the History page: the quote, who said it,
-// the first few lines and a link to the whole lesson, with the painting as a thumbnail like an article's. No source link here.
+// The quote preview: the quote is the link to the whole piece, then who said it and the first few lines,
+// with the painting as a thumbnail like an article's. No source link here.
 const byline = l => `<span aria-hidden="true">– </span>${esc(l.name)} <span class="years">(${esc(years(l))})</span>`;
-const lessonCard = (l, h = 'h3', label = 'From history') => `<article class="card lesson" aria-labelledby="lesson-${l.slug}">
-<div class="text"><${h} class="kicker" id="lesson-${l.slug}">${esc(label)}</${h}>
-<blockquote class="lq"><p>“${esc(l.quote)}”</p></blockquote>
+const lessonCard = l => `<article class="card lesson">
+<div class="text"><blockquote class="lq"><p><a href="${lessonUrl(l)}">“${esc(l.quote)}”<span class="sr-only"> (${esc(l.name)})</span></a></p></blockquote>
 <p class="by">${byline(l)}</p>
 <p class="excerpt">${esc(l.about.split(/\n{2,}/)[0].replace(/[#*]/g, '').trim())}</p>
-<p class="readmore"><a href="${lessonUrl(l)}">Read more<span class="sr-only"> about ${esc(l.name)}</span></a></p>
 </div>${thumb(l, lessonUrl(l))}
 </article>`;
-// "On this day", at the end of a day just above "From history": an article-style card with a thumbnail.
+// "On this day": an article-style card with its own small kicker and a thumbnail.
 const otdCard = (o, h = 'h3') => `<article class="card">
 <div class="text"><p class="kicker">On this day · <time datetime="${o.date}">${fmtShort(noon(o.date))}</time> ${esc(yearLabel(o.year))}</p>
 <${h}><a href="${otdUrl(o)}">${esc(o.title)}</a></${h}>
 <p class="dek">${esc(o.dek)}</p>
 </div>${thumb(o, otdUrl(o))}
 </article>`;
-// The end of a day: "On this day", then "From history".
-const historyEnd = d => { const o = onThisDay.find(x => x.date === d), l = lessons.find(x => x.date === d); return `${o ? otdCard(o) : ''}${l ? lessonCard(l) : ''}`; };
+// The end of a day: one "From history" section with "On this day", then the quote.
+// On the History page the page itself is "From history", so it needs no label there.
+const historyEnd = (d, labelled = true) => {
+  const o = onThisDay.find(x => x.date === d), l = lessons.find(x => x.date === d);
+  if (!o && !l) return '';
+  const items = `${o ? otdCard(o, labelled ? 'h4' : 'h3') : ''}${l ? lessonCard(l) : ''}`;
+  return labelled ? `<section class="fromhistory" aria-labelledby="fh-${d}"><h3 class="kicker fh-label" id="fh-${d}">From history</h3>\n${items}</section>` : items;
+};
 // A day heading starts each new day; the lead story's own day needs none.
 function feed(list, first = false) {
   let html = '', day = '';
@@ -183,7 +187,7 @@ put('/history/index.html', layout({ title: `From history · ${NAME}`, desc: 'Eac
   body: `<h1 class="listhead">From history</h1>
 <p class="lede">Each day, a moment from history and one voice from the past, in their own words.</p>
 ${historyDays.map(d => `<section class="edition" aria-labelledby="day-${d}"><h2 class="edhead" id="day-${d}">${fmtLong(noon(d))}</h2>
-${historyEnd(d)}</section>`).join('\n') || '<p class="note">Nothing here yet.</p>'}` }));
+${historyEnd(d, false)}</section>`).join('\n') || '<p class="note">Nothing here yet.</p>'}` }));
 for (const l of lessons) {
   put(`${lessonUrl(l)}index.html`, layout({ title: `${l.name} · From history · ${NAME}`, desc: `“${l.quote}” ${l.name}, ${years(l)}`, canonical: lessonUrl(l), active: 'History',
     extraHead: l.image ? `<meta property="og:image" content="${SITE}${l.image.hero.src}">` : '',

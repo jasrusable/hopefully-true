@@ -28,6 +28,7 @@ jobs:
   edition:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    environment: production # its secrets are only available to runs on main
     steps:
       - name: Zurich-hour guard
         id: guard

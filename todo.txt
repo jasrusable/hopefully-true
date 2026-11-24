@@ -23,15 +23,10 @@ LATER (not part of the current build, don't implement yet)
      donate page.
    - Payment provider still to be decided.
 
-4. SEO
-   - Later, make the site easy for search engines to find and understand:
-     good titles and descriptions, structured data for articles, sitemap
-     and feed kept up to date.
-
-5. GEO (generative engine optimisation)
+4. GEO (generative engine optimisation)
    - Later, make the articles easy for AI search engines and assistants to
      find, quote and cite correctly, with clear sources and dates.
 
-6. Accessibility
+5. Accessibility
    - Later, do a full accessibility review (screen readers, keyboard use,
      contrast, zoom and reduced motion) and fix what it finds.

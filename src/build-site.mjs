@@ -53,23 +53,41 @@ const yearLabel = y => y < 0 ? `${-y} BC` : String(y);
 const noon = day => `${day}T12:00:00Z`; // a "YYYY-MM-DD" day as a time that is that same day in Zurich
 const years = l => l.died ? `${l.born}–${l.died}` : `born ${l.born}`;
 
-function layout({ title, desc, body, canonical, active = '', extraHead = '' }) {
+// What search engines and link previews see. Pages without their own picture share the site card.
+const SITE_IMAGE = { src: '/og-default.png', width: 1200, height: 630, alt: `${NAME}: news written by AI, hopefully true.` };
+const picture = x => x.image ? { ...x.image.hero, alt: x.image.alt } : SITE_IMAGE;
+const ORG = { '@type': 'Organization', name: NAME, url: `${SITE}/`, logo: { '@type': 'ImageObject', url: `${SITE}/icon-512.png`, width: 512, height: 512 } };
+const AI_NOTE = "Written automatically by AI (xAI's Grok) from published reporting. Each piece links its sources.";
+// Structured data (schema.org JSON-LD). The writer is an AI, so the author is the site itself, and it says so.
+const articleLd = ({ type = 'NewsArticle', headline, description, path, published, image, section, keywords = [], sources = [] }) => ({
+  '@context': 'https://schema.org', '@type': type, headline: headline.slice(0, 110), description,
+  url: SITE + path, mainEntityOfPage: SITE + path, datePublished: published, dateModified: published,
+  inLanguage: 'en-GB', image: [SITE + image.src], ...(section && { articleSection: section }),
+  ...(keywords.length && { keywords: keywords.join(', ') }),
+  author: { ...ORG, description: AI_NOTE }, publisher: ORG, isBasedOn: sources.filter(isWeb),
+});
+const ldScript = data => `\n<script type="application/ld+json">${JSON.stringify(data).replace(/</g, '\\u003c')}</script>`; // \u003c: no "</script>" can end it early
+
+function layout({ title, desc, body, canonical, active = '', type = 'website', image = SITE_IMAGE, published = '', jsonld = null, noindex = false }) {
   const nav = [['All', '/', ''], ...usedCats.map(c => [c, `/category/${slug(c)}/`, c]), ['History', '/history/', 'History']]
     .map(([l, h, k]) => `<a href="${h}"${k === active ? ' aria-current="page"' : ''}>${esc(l)}</a>`).join('');
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en-GB"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-<link rel="canonical" href="${SITE}${canonical}">
-<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="website">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+${noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${SITE}${canonical}">`}
+<meta property="og:site_name" content="${NAME}"><meta property="og:locale" content="en_GB"><meta property="og:type" content="${type}">
+<meta property="og:url" content="${SITE}${canonical}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}">
+<meta property="og:image" content="${SITE}${image.src}"><meta property="og:image:width" content="${image.width}"><meta property="og:image:height" content="${image.height}"><meta property="og:image:alt" content="${esc(image.alt)}">
+${published ? `<meta property="article:published_time" content="${published}">` : ''}<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="${NAME}" href="/feed.xml">
 <link rel="preload" href="/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/newsreader-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/newsreader-latin-var-italic.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="color-scheme" content="light dark">
-<link rel="stylesheet" href="/style.css?v=${STYLE_V}">${extraHead}
+<link rel="stylesheet" href="/style.css?v=${STYLE_V}">${jsonld ? ldScript(jsonld) : ''}
 </head><body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="masthead"><div class="wrap top">
@@ -154,20 +172,24 @@ const editions = days.map((d, i) => {
   return `<section class="edition" aria-labelledby="day-${d}"><h2 class="edhead" id="day-${d}">${fmtLong(noon(d))}</h2>
 ${list.map((a, j) => i === 0 && j === 0 ? lead(a, 'h3') : card(a, 'h3')).join('\n')}${historyEnd(d)}</section>`;
 }).join('\n');
-put('/index.html', layout({ title: `${NAME}: ${TAGLINE}`, desc: 'Plain-language daily news, written by AI from the day\'s reporting.', canonical: '/',
-  body: `<p class="greeting" id="greeting">Hello</p>${editions || '<p class="note">Nothing here yet. The universe is, briefly, quiet.</p>'}
+const homeDesc = 'Plain-language daily news, written by AI from the day\'s reporting, with its sources linked.';
+put('/index.html', layout({ title: `${NAME}: ${TAGLINE}`, desc: homeDesc, canonical: '/',
+  jsonld: { '@context': 'https://schema.org', '@type': 'WebSite', name: NAME, url: `${SITE}/`, description: homeDesc, inLanguage: 'en-GB', publisher: ORG },
+  body: `<h1 class="sr-only">${NAME}: today's news, written by AI</h1><p class="greeting" id="greeting">Hello</p>${editions || '<p class="note">Nothing here yet. The universe is, briefly, quiet.</p>'}
 <p class="note older">Older stories are in the sections above, and in search.</p>` }));
-for (const c of usedCats) listing(articles.filter(a => a.category === c), `/category/${slug(c)}/`, `${c} · ${NAME}`, esc(c), `${c} news in plain words.`, c);
+for (const c of usedCats) listing(articles.filter(a => a.category === c), `/category/${slug(c)}/`, `${c} · ${NAME}`, esc(c), `${c} news in plain words, written by AI from the day's reporting.`, c);
 for (const t of Object.keys(tagCounts)) listing(articles.filter(a => a.tags.includes(t)), `/tag/${t}/`, `#${tagLabel(t)} · ${NAME}`, `#${esc(tagLabel(t))}`, `Articles tagged ${tagLabel(t)}.`, '');
 
 const tagIndex = Object.entries(tagCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-put('/tags/index.html', layout({ title: `Tags · ${NAME}`, desc: 'All tags.', canonical: '/tags/',
+put('/tags/index.html', layout({ title: `Tags · ${NAME}`, desc: `Every tag on ${NAME}, with how many stories have it.`, canonical: '/tags/',
   body: `<h1 class="listhead">All tags</h1><p class="tagcloud">${tagIndex.map(([t, n]) => `<a href="/tag/${t}/">#${esc(tagLabel(t))} <small>${n}</small></a>`).join(' ')}</p>` }));
 
 for (const a of articles) {
   const related = articles.filter(b => b !== a && (b.category === a.category || b.tags.some(t => a.tags.includes(t)))).slice(0, 3);
   put(`${url(a)}index.html`, layout({ title: `${a.title} · ${NAME}`, desc: a.dek, canonical: url(a), active: a.category,
-    extraHead: `<meta property="article:published_time" content="${a.publishedAt}">${a.image ? `<meta property="og:image" content="${SITE}${a.image.hero.src}">` : ''}`,
+    type: 'article', published: a.publishedAt, image: picture(a),
+    jsonld: articleLd({ headline: a.title, description: a.dek, path: url(a), published: a.publishedAt, image: picture(a),
+      section: a.category, keywords: a.tags.map(tagLabel), sources: a.sources.map(x => x.url) }),
     body: `<article class="story">
 <p class="kicker"><a href="/category/${slug(a.category)}/">${esc(a.category)}</a> · <time datetime="${a.publishedAt}">${fmtShort(a.publishedAt)}</time> · ${Math.max(1, Math.round(words(a.body) / 220))} min read</p>
 <h1>${esc(a.title)}</h1>
@@ -190,7 +212,9 @@ ${historyDays.map(d => `<section class="edition" aria-labelledby="day-${d}"><h2 
 ${historyEnd(d, false)}</section>`).join('\n') || '<p class="note">Nothing here yet.</p>'}` }));
 for (const l of lessons) {
   put(`${lessonUrl(l)}index.html`, layout({ title: `${l.name} · From history · ${NAME}`, desc: `“${l.quote}” ${l.name}, ${years(l)}`, canonical: lessonUrl(l), active: 'History',
-    extraHead: l.image ? `<meta property="og:image" content="${SITE}${l.image.hero.src}">` : '',
+    type: 'article', published: l.publishedAt, image: picture(l),
+    jsonld: articleLd({ type: 'Article', headline: `${l.name}: “${l.quote}”`, description: `“${l.quote}” ${l.name}, ${years(l)}`, path: lessonUrl(l),
+      published: l.publishedAt, image: picture(l), section: 'From history', sources: [l.source] }),
     body: `<article class="story lesson-page">
 <p class="kicker"><a href="/history/">From history</a> · <time datetime="${l.date}">${fmtShort(noon(l.date))}</time> · ${Math.max(1, Math.round(words(`${l.about} ${l.painting || ''}`) / 220))} min read</p>
 ${l.image ? `<figure class="hero"><img src="${l.image.hero.src}" width="${l.image.hero.width}" height="${l.image.hero.height}" alt="${esc(l.image.alt)}" fetchpriority="high" decoding="async"><figcaption>Painting generated by AI</figcaption></figure>` : ''}
@@ -205,7 +229,9 @@ ${isWeb(l.source) ? `<section class="sources"><h2>Source of the quote</h2><ul><l
 
 for (const o of onThisDay) {
   put(`${otdUrl(o)}index.html`, layout({ title: `${o.title} · On this day · ${NAME}`, desc: o.dek, canonical: otdUrl(o), active: 'History',
-    extraHead: o.image ? `<meta property="og:image" content="${SITE}${o.image.hero.src}">` : '',
+    type: 'article', published: o.publishedAt, image: picture(o),
+    jsonld: articleLd({ type: 'Article', headline: o.title, description: o.dek, path: otdUrl(o), published: o.publishedAt,
+      image: picture(o), section: 'On this day', sources: o.sources.map(x => x.url) }),
     body: `<article class="story">
 <p class="kicker"><a href="/history/">On this day</a> · <time datetime="${o.date}">${fmtShort(noon(o.date))}</time> ${esc(yearLabel(o.year))} · ${Math.max(1, Math.round(words(o.body) / 220))} min read</p>
 <h1>${esc(o.title)}</h1>
@@ -218,7 +244,7 @@ ${sourcesList(o.sources)}
 <p class="note"><a href="/history/">More from history</a></p>` }));
 }
 
-put('/about/index.html', layout({ title: `About · ${NAME}`, desc: 'About this site.', canonical: '/about/',
+put('/about/index.html', layout({ title: `About · ${NAME}`, desc: `What ${NAME} is: a small daily news site written by AI from the day's reporting, with its sources and prompts public.`, canonical: '/about/',
   body: `<article class="story"><h1>About ${NAME}</h1><div class="body">
 <p>Hopefully True is a small experiment: a daily news site written entirely by AI (xAI's Grok). Each morning it picks about five stories from the last day, reads what reporters are saying, checks further where it can, and writes its own plain account of what is most likely true and why it matters. Where it isn't sure, it says so.</p>
 <p>Now and then it allows itself a small smile, because the universe is frequently ridiculous.</p>
@@ -237,16 +263,24 @@ ${promptFiles.map(f => `<h2 class="prompt-title">${esc(f.replace(/\.md$/, '').re
 <pre class="prompt">${esc(fs.readFileSync(path.join(ROOT, 'prompts', f), 'utf8').trim())}</pre>`).join('\n')}
 </article>` }));
 
-put('/404.html', layout({ title: `Not found · ${NAME}`, desc: 'Not found.', canonical: '/404.html',
+put('/404.html', layout({ title: `Not found · ${NAME}`, desc: 'Not found.', canonical: '/404.html', noindex: true,
   body: '<h1 class="listhead">Page not found</h1><p>This page has wandered off, as things do. <a href="/">Back to the front page</a>.</p>' }));
 
 put('/search.json', JSON.stringify(articles.map(a => ({ t: a.title, d: a.dek, c: a.category, g: a.tags, u: url(a), p: a.publishedAt, i: a.image?.thumb.src || '',
   x: a.body.replace(/[#*]/g, '').slice(0, 1500) })).concat(onThisDay.map(o => ({ t: o.title, d: o.dek, c: 'On this day', g: [], u: otdUrl(o), p: o.publishedAt, i: o.image?.thumb.src || '', x: o.body.replace(/[#*]/g, '').slice(0, 1500) })), lessons.map(l => ({ t: l.name, d: `“${l.quote}”`, c: 'From history', g: [], u: lessonUrl(l), p: l.publishedAt, i: l.image?.thumb.src || '', x: l.about.replace(/[#*]/g, '').slice(0, 1500) })))));
 
 const rssItems = articles.slice(0, 50).map(a => `<item><title>${esc(a.title)}</title><link>${SITE}${url(a)}</link><guid>${SITE}${url(a)}</guid><pubDate>${new Date(a.publishedAt).toUTCString()}</pubDate><category>${esc(a.category)}</category><description>${esc(a.dek)}</description></item>`).join('');
-put('/feed.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${NAME}</title><link>${SITE}/</link><description>${TAGLINE}</description>${rssItems}</channel></rss>`);
-put('/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${['/', ...articles.map(url), '/history/', ...onThisDay.map(otdUrl), ...lessons.map(lessonUrl)].map(u => `<url><loc>${SITE}${u}</loc></url>`).join('')}</urlset>`);
-put('/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`);
+const latest = list => list.map(x => x.publishedAt).sort().pop();
+put('/feed.xml', `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>${NAME}</title><link>${SITE}/</link><description>${TAGLINE}</description><language>en-gb</language>${articles.length ? `<lastBuildDate>${new Date(latest(articles)).toUTCString()}</lastBuildDate>` : ''}<atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml"/>${rssItems}</channel></rss>`);
+// Every page worth finding, with when it last changed. Tag pages are left out: they only repeat the articles.
+const sitemapPages = [['/', latest(articles)], ...usedCats.map(c => [`/category/${slug(c)}/`, latest(articles.filter(a => a.category === c))]),
+  ...articles.map(a => [url(a), a.publishedAt]), ['/history/', latest([...onThisDay, ...lessons])],
+  ...onThisDay.map(o => [otdUrl(o), o.publishedAt]), ...lessons.map(l => [lessonUrl(l), l.publishedAt]), ['/about/'], ['/prompts/'], ['/tags/']];
+put('/sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${sitemapPages.map(([u, t]) => `<url><loc>${SITE}${u}</loc>${t ? `<lastmod>${t}</lastmod>` : ''}</url>`).join('')}</urlset>`);
+// Google News sitemap: only articles from the last two days, as Google asks.
+const fresh = articles.filter(a => Date.now() - new Date(a.publishedAt) < 2 * 86400e3);
+put('/news-sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">${fresh.map(a => `<url><loc>${SITE}${url(a)}</loc><news:news><news:publication><news:name>${NAME}</news:name><news:language>en</news:language></news:publication><news:publication_date>${a.publishedAt}</news:publication_date><news:title>${esc(a.title)}</news:title></news:news></url>`).join('')}</urlset>`);
+put('/robots.txt', `User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\nSitemap: ${SITE}/news-sitemap.xml\n`);
 
 // Write everything, plus static assets.
 fs.rmSync(OUT, { recursive: true, force: true });

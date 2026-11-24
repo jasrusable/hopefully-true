@@ -2,6 +2,8 @@
 
 News that is hopefully true.
 
+Read it at [hopefullytrue.com](https://hopefullytrue.com).
+
 Every morning an AI (Grok, from xAI) looks at what happened in the world in the last 24 hours, picks five stories, reads the reporting, and writes each one up in plain words, with a small illustration. It ends the day with history: “On this day”, something worthwhile that happened on that date in an earlier year, and a moment from history: a real quote, the story behind it, and a painting in the style of its time and place. The result is a simple static website. It tries very hard to be right, and it links its sources so you can check.
 
 The whole thing is driven by six short prompts. They are the heart of the project, so here they are in full.

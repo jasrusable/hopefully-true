@@ -22,7 +22,7 @@ concurrency:
 
 env:
   PAGES_PROJECT: hopefully-true
-  PAGES_DOMAIN: hopefullytrue.jasonrussell.io
+  PAGES_DOMAIN: hopefullytrue.com
 
 jobs:
   edition:

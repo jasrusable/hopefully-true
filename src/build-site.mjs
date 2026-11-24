@@ -5,7 +5,7 @@ import { ROOT, CONTENT, CATEGORIES } from './config.mjs';
 
 const STYLE_V = String(Date.now()).slice(-8); // cache-busts style.css and search.js on every build
 const OUT = path.resolve(process.argv[2] || path.join(ROOT, 'out'));
-const SITE = process.env.SITE_URL || 'https://hopefullytrue.jasonrussell.io';
+const SITE = process.env.SITE_URL || 'https://hopefullytrue.com';
 const NAME = 'Hopefully True';
 const TAGLINE = "News written by AI, hopefully true. Don't\u00a0panic."; // non-breaking space keeps "Don't panic." together
 const PAGE = 30;

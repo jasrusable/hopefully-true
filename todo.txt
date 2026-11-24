@@ -16,7 +16,7 @@ LATER (not part of the current build, don't implement yet)
    - Later, publish the repository publicly under an open-source licence.
    - Before that: check the code and its git history for secrets, pick a
      licence, and tidy up the README.
-   - The repo stays private for now.
+   - Done: the repo is public.
 
 3. Accept donations
    - Later, add a way for readers to donate, such as a donate button or a

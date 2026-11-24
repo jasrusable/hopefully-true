@@ -13,6 +13,6 @@
     "serve": "python3 -m http.server 8787 --bind 127.0.0.1 -d out"
   },
   "dependencies": {
-    "sharp": "^0.34.5"
+    "sharp": "^0.35.5"
   }
 }

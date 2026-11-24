@@ -1,0 +1,55 @@
+{
+  "id": "2026-11-24-scientists-rebuild-a-cancer-drug-s-full-recipe-in-a-lab-plant",
+  "slug": "2026-11-24-scientists-rebuild-a-cancer-drug-s-full-recipe-in-a-lab-plant",
+  "story": "University of Copenhagen researchers mapped the complete biosynthetic pathway of the cancer drug paclitaxel and produced it in tobacco plants at levels comparable to yew tree bark.",
+  "category": "Science",
+  "title": "Scientists rebuild a cancer drug’s full recipe in a lab plant",
+  "dek": "University of Copenhagen researchers mapped every step of how yew trees make paclitaxel and got a lab plant to produce similar amounts.",
+  "tags": [
+    "copenhagen",
+    "paclitaxel",
+    "cancer",
+    "biotechnology"
+  ],
+  "body": "Paclitaxel is a mainstay chemotherapy for breast, ovarian and lung cancers. It was first isolated from Pacific yew bark in 1971. The tree holds only small amounts, and harvesting bark is destructive, so manufacturers long ago switched. Most paclitaxel today is made either by semi-synthesis from a precursor in yew needles or by growing yew cells in culture. The process is established, but still expensive.\n\nScientists have chased the tree’s own recipe for decades. Many enzymes were known. A few steps stayed uncertain, with competing ideas about order and chemistry. Researchers led by Sotirios Kampranis at the University of Copenhagen say they have now settled those questions by building the whole pathway, start to finish, in another plant.\n\nThe host is Nicotiana benthamiana, a quick-growing relative of tobacco used widely in labs, not the plant in cigarettes. Using a common soil bacterium, the team temporarily added more than 20 yew genes to the leaves. The leaves produced the enzymes, and the enzymes produced paclitaxel. The group checked its work by isolating intermediate compounds and confirming their structures, and by repeating key reactions in yeast so the lab plant’s own chemistry could not confuse the result. They also found that the pathway is split across several parts of the cell. Intermediates have to move among plastids, the endoplasmic reticulum, the cytosol and peroxisomes.\n\nEarly attempts yielded only 0.104 micrograms of the drug per gram of dried leaf. After the team packed genes onto shared DNA constructs and used more efficient bacterial strains, the level rose more than 500-fold, to 61.05 micrograms per gram. The paper says that is comparable to paclitaxel in yew bark.\n\n## What this does and does not change\n\nKampranis describes the work as a blueprint for making the drug in plants, yeast or other systems, and suggests it could eventually lower costs and widen access, particularly in lower-income countries. Outside experts treat that as a hope, not a result. Heribert Warzecha of the Technical University of Darmstadt called matching bark levels a great success, then added that current production in yew cell cultures, or by chemical modification of needle extracts, is already cost-optimized. A new method, he said, would need enormous advantages before industry switched. Yields may have to rise much further before this approach is competitive.\n\nThe experiment itself was temporary. Genes were delivered into leaves for the test, not locked into the plant’s genome. Kampranis has said stable plants, which keep the yew genes permanently, are the next major challenge if anyone wants greenhouse-scale production. Until that engineering is done, and until costs are shown to beat today’s methods, patients will keep receiving paclitaxel made the old way.\n\nThe advance is real. The full pathway has been chemically checked and run outside the yew. A plant that usually helps scientists test ideas, rather than fill cigarettes, can make a cancer drug. Whether that ever becomes a cheaper source is still an open question.",
+  "sources": [
+    {
+      "title": "Complete biosynthesis and production of paclitaxel in a plant host",
+      "url": "https://www.nature.com/articles/s41589-026-02376-x"
+    },
+    {
+      "title": "Recipe for one of the world’s most important cancer drugs uncovered: Tobacco plants could produce the medicine",
+      "url": "https://www.eurekalert.org/news-releases/1153014"
+    },
+    {
+      "title": "Genveränderte Tabakpflanze kann Mittel gegen Krebs herstellen",
+      "url": "https://www.n-tv.de/wissen/Genveraenderte-Tabakpflanze-kann-Mittel-gegen-Krebs-herstellen-id31568183.html"
+    },
+    {
+      "title": "Complete biosynthetic pathway of Taxol finally resolved",
+      "url": "https://cen.acs.org/biological-chemistry/cancer/Complete-biosynthetic-pathway-Taxol-finally/104/web/2026/11"
+    }
+  ],
+  "publishedAt": "2026-11-24T14:29:21.409Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Leaves and bark beside a sketched molecule, standing in for a plant-made cancer drug.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-24-scientists-rebuild-a-cancer-drug-s-full-recipe-in-a-lab-plant-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-24-scientists-rebuild-a-cancer-drug-s-full-recipe-in-a-lab-plant-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

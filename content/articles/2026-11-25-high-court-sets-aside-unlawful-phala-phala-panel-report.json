@@ -1,0 +1,55 @@
+{
+  "id": "2026-11-25-high-court-sets-aside-unlawful-phala-phala-panel-report",
+  "slug": "2026-11-25-high-court-sets-aside-unlawful-phala-phala-panel-report",
+  "story": "South Africa’s Western Cape High Court set aside the Section 89 panel report on the Phala Phala affair as unlawful, halting parliamentary impeachment steps against President Cyril Ramaphosa.",
+  "category": "South Africa",
+  "title": "High court sets aside unlawful Phala Phala panel report",
+  "dek": "The Western Cape High Court declared the 2022 Phala Phala panel report unlawful and set it aside, halting impeachment steps against President Ramaphosa.",
+  "tags": [
+    "south-africa",
+    "cyril-ramaphosa",
+    "phala-phala",
+    "impeachment"
+  ],
+  "body": "A full bench of the Western Cape High Court set aside the independent panel report on the Phala Phala affair on Wednesday and declared it unlawful. Judge President Nolwazi Mabindla-Boqwana, sitting with Judges Mark Sher and Ncumisa Mayosi, read the unanimous judgment. The court also set aside any steps the National Assembly had taken on the strength of the report, halting the impeachment process against President Cyril Ramaphosa.\n\nThe panel, led by former chief justice Sandile Ngcobo, found in November 2022 that the information before it showed, on a prima facie basis, that Ramaphosa might have committed a serious violation or serious misconduct. The charges concerned the theft of foreign currency from his Limpopo game farm on 9 February 2020. The court held that the rules required a finding of sufficient evidence that the president had acted in bad faith. The panel never made that finding. It equated a preliminary case to answer with the higher test, confusing an early sifting role with a full adjudicative hearing.\n\n## How the panel erred\n\nThe judges said the panel also ranged beyond the four charges. Extra submissions from opposition parties led it to focus on the source of the dollars and on Major-General Wally Rhoode's movements in Cape Town and Namibia. It relied on Arthur Fraser’s affidavit even though much of the account was hearsay. Fraser had no personal knowledge of the farm incident and did not explain his sources.\n\nThe panel made a material error of law by treating a disclosed farming interest as forbidden paid work, ignoring the ethics rules that allow cabinet members to hold interests that create no conflict. It never considered bad faith on the charge of failing to report the theft. Other charges lacked proper findings, and the panel misread a Namibian statement. Mabindla-Boqwana concluded that the panel had fundamentally misconstrued its functions, gone beyond its lawful remit and asked the wrong questions.\n\nThe ruling does not clear Ramaphosa of every question about the affair. The court said an impeachment process with far-reaching consequences must simply proceed on a lawful foundation. It rejected claims that the review came too late or that the court lacked power to hear it, because the Constitutional Court had not ruled on the report’s validity.\n\n## Appeals and the longer story\n\nAfrican Transformation Movement leader Vuyolwethu Zungula indicated that an appeal is likely, saying there appeared to be one law for the president and another for citizens. Speaker Thoko Didiza will study the judgment. A committee meeting set for Thursday may now be overtaken by events.\n\nCash hidden in a sofa at a game farm has kept lawyers and politicians occupied since 2022. Ramaphosa maintains the roughly 580,000 dollars came from a sale of game and that he did nothing wrong. The public protector and other inquiries previously cleared him, and prosecutors declined to charge him, while a police watchdog report was critical of his security chief. Wednesday’s decision turns only on the lawfulness of one parliamentary report. If opponents appeal, another court will have the last word for now.",
+  "sources": [
+    {
+      "title": "Court sets aside Phala Phala panel report, clearing Ramaphosa",
+      "url": "https://iol.co.za/news/crime-and-courts/2026-11-25-court-sets-aside-phala-phala-panel-report-clearing-ramaphosa/"
+    },
+    {
+      "title": "Ramaphosa off the hook as court sets aside impeachment report",
+      "url": "https://www.dailymaverick.co.za/article/2026-11-25-ramaphosa-succeeds-in-setting-aside-impeachment-report/"
+    },
+    {
+      "title": "Errors of law: Ramaphosa bags win as Phala Phala report set aside",
+      "url": "https://www.citizen.co.za/news/south-africa/courts/ramaphosa-phala-phala-report-set-aside/"
+    },
+    {
+      "title": "Phala Phala report set aside and impeachment process halted",
+      "url": "https://mg.co.za/news/south-africa/2026-11-25-phala-phala-report-set-aside-and-impeachment-process-halted/"
+    }
+  ],
+  "publishedAt": "2026-11-25T19:49:40.578Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Closed folder, gavel and farmland sketch on a table",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-high-court-sets-aside-unlawful-phala-phala-panel-report-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-high-court-sets-aside-unlawful-phala-phala-panel-report-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "2026-11-25-carl-jung",
+  "slug": "2026-11-25-carl-jung",
+  "date": "2026-11-25",
+  "name": "Carl Jung",
+  "born": "1875",
+  "died": "1961",
+  "quote": "Your vision will become clear only when you can look into your own heart. Without, everything seems discordant; only within does it coalesce into unity. Who looks outside dreams; who looks inside awakes.",
+  "about": "Carl Gustav Jung was a Swiss psychiatrist who lived from 1875 to 1961. He lived and worked near Zurich for most of his life. In his early years he worked with Sigmund Freud, then followed a separate course that he called analytical psychology. He paid close attention to dreams, to the hidden sides of personality, and to patterns he believed were shared across cultures.\n\nIn a letter dated 22 October 1916, written as he prepared to enter military service, Jung answered a woman who sought clearer sight of her difficulties. He warned that looking at other people and placing one’s own feelings onto them brings no harmony. Then he set down the lines that have stayed with readers: vision becomes clear only when one looks into one’s own heart. Outside, everything seems discordant; only within does it coalesce into unity. Who looks outside dreams; who looks inside awakes.\n\nThe advice is quiet, yet it cuts against a common habit. It is easier to scan the outer world for the cause of unease, to hope that a change of place, a different companion or the next piece of news will settle the mind. Jung calls that outward watching a kind of dream. The scenes one meets are coloured by what remains unexamined inside. Discord felt in the world may be genuine, but part of the tangle can be one’s own projections returning as if they belonged to someone else. Turning inward is not an escape. It is the move that lets the scattered pieces begin to form a single picture.\n\nJung did not offer the words as a public doctrine. They appear in a private letter to one person who felt the need to see clearly. He himself continued to meet patients, to study myths and to respond to the events of his century. The inner look, in his view, made the outer life more truthful rather than smaller. For anyone who follows news from more than one country, the sentence can serve as a small daily check. Before judging a distant quarrel or another person’s motive, notice what stirs in one’s own heart. The clarity that arrives there does not erase difficulty. It simply wakes the dreamer to the unity that was already trying to appear.",
+  "painting": "A still lake fills the lower half of the canvas, holding the dark slopes and pale summits in an almost exact reflection. Painted around 1910 in the rhythmic, simplified manner of Swiss Symbolism, the forms repeat in quiet parallels of shoreline, mountain ridge and cloud. No figures interrupt the view. The outer peaks remain a little remote, as if seen in a half-dream, while the mirrored water close at hand gathers light and shape into one clear image, echoing the thought that unity appears when the gaze turns inward.",
+  "source": "https://en.wikiquote.org/wiki/Carl_Jung",
+  "image": {
+    "alt": "Still lake reflecting alpine peaks in a rhythmic early twentieth-century Swiss landscape.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-carl-jung-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-carl-jung-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  },
+  "publishedAt": "2026-11-25T20:02:56.963Z",
+  "model": "grok-4.7"
+}

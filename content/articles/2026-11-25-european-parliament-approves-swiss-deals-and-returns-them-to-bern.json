@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-25-european-parliament-approves-swiss-deals-and-returns-them-to-bern",
+  "slug": "2026-11-25-european-parliament-approves-swiss-deals-and-returns-them-to-bern",
+  "story": "The European Parliament approved a broad package of updated agreements with Switzerland by 584 votes to 13 in Strasbourg on Wednesday, sending the next steps back to Bern.",
+  "category": "Switzerland",
+  "title": "European Parliament approves Swiss deals and returns them to Bern",
+  "dek": "Lawmakers in Strasbourg approved updated Swiss-EU agreements by 584 votes to 13, leaving the harder test to Switzerland’s parliament and voters.",
+  "tags": [
+    "switzerland",
+    "european-union",
+    "bilaterals",
+    "referendum"
+  ],
+  "body": "The European Parliament approved a broad package of agreements with Switzerland on Wednesday in Strasbourg, by 584 votes to 13, with 60 abstentions. There was no debate, and the vote itself took seconds.\n\nFrench MEP Christophe Grudler, who led the file, said the deals should make daily life easier, especially for people who cross the border for work. “The ball is now in Switzerland’s court,” he said.\n\nThe package, known as Bilaterals III, was signed in March 2026 after political talks ended in December 2024. Switzerland is not in the European Union. Since voters rejected the European Economic Area in 1992, relations have rested on sector-by-sector treaties. Talks on an institutional agreement ended in 2021, and Switzerland was shut out of major EU research and education programmes.\n\n## What would change\n\nThe package updates five market agreements: free movement of people, air and land transport, agriculture, and the mutual recognition of product rules. It adds treaties on electricity, health and food safety. It would also steady Swiss participation in EU programmes, including research and Erasmus+ from 2027, and the recognition of diplomas and professional experience.\n\nSwitzerland sits inside the European power grid without a treaty to match that fact. The electricity deal is meant to support supply, stability and trade in power. The health agreement covers cross-border threats, and the food-safety protocol would create a shared safety area. The EU is Switzerland’s largest trading partner, and Switzerland is the EU’s fourth largest, after the United States, China and Britain.\n\nThere is a price. In the sectors covered, Switzerland would keep its rules in line with EU rules as they change, and it would make regular payments toward poorer EU regions. The Federal Council says it secured exceptions on free movement, land transport, electricity and food safety. Stable market access, in return for following rules Switzerland does not write, is the argument waiting at home.\n\n## A slower decision in Bern\n\nThe yes in Strasbourg was broad. In Switzerland the package is not settled. The Council of States has begun work, and the National Council is due to debate it in the winter session. The chambers still differ on the vote: the upper house wants a mandatory referendum needing a majority of voters and of cantons, and the lower house has not agreed.\n\nA public vote is not expected before 2028. The last possible referendum date in 2027 is June, which the parliamentary calendar is not expected to meet, and federal elections follow on 24 October 2027. The Swiss People’s Party, the largest party, opposes the package as a loss of sovereignty. If voters say no, the older treaties would remain but would no longer be updated, and even a Swiss yes would still need EU governments to conclude the package.\n\nThis is not a decision to join the Union. It is a decision about how close a neighbour stays, and on whose terms. Strasbourg needed seconds. Bern will need a ballot paper.",
+  "sources": [
+    {
+      "title": "EU parliament approves Swiss treaty package",
+      "url": "https://www.swissinfo.ch/eng/foreign-affairs/eu-parliament-approves-the-switzerland-eu-treaty-package/92436424"
+    },
+    {
+      "title": "Bilaterals III glide through the European Parliament like a knife through butter, with a resounding yes",
+      "url": "https://www.letemps.ch/en/switzerland/bilaterals-iii-glide-through-the-european-parliament-like-a-knife-through-butter-with-a-resounding-yes"
+    },
+    {
+      "title": "Content of the package Switzerland-EU (Bilaterals III)",
+      "url": "https://www.europa.eda.admin.ch/en/content-package-switzerland-eu"
+    },
+    {
+      "title": "Engere Zusammenarbeit zwischen EU und Schweiz beschlossen",
+      "url": "https://www.n-tv.de/ticker/Engere-Zusammenarbeit-zwischen-EU-und-Schweiz-beschlossen-id31577062.html"
+    },
+    {
+      "title": "Dispatch on the Switzerland-EU Package (Bilaterals III)",
+      "url": "https://www.europa.eda.admin.ch/en/dispatch-swiss-eu-package"
+    }
+  ],
+  "publishedAt": "2026-11-25T19:46:33.772Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Ballot paper and two flags on a bench above a valley with power lines.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-european-parliament-approves-swiss-deals-and-returns-them-to-bern-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-european-parliament-approves-swiss-deals-and-returns-them-to-bern-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

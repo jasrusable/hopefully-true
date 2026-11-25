@@ -1,0 +1,40 @@
+{
+  "id": "2026-11-25-swiss-roads-fall-silent-on-first-fuel-saving-sunday",
+  "slug": "2026-11-25-swiss-roads-fall-silent-on-first-fuel-saving-sunday",
+  "date": "2026-11-25",
+  "year": 1973,
+  "title": "Swiss roads fall silent on first fuel-saving Sunday",
+  "dek": "The Federal Council banned most motor traffic today so Switzerland could save scarce fuel during the oil crisis.",
+  "body": "The roads of Switzerland stood almost empty today. The Federal Council had banned motor vehicles for the day, the first of three Sundays set aside to stretch the country’s fuel supplies during the oil crisis.\n\nThe order came after oil-producing states cut shipments following the recent war in the Middle East. Petrol had grown scarce and expensive. Drivers without a special permit risked fines of up to 40,000 francs. Only taxis, ambulances, repair services and a short list of other essential journeys were allowed.\n\nMost people kept to the rules. Bicycle bells and the scrape of roller skates replaced the sound of engines. Families walked along motorways that are normally closed to pedestrians. Old bicycles came out of cellars. Horses and carts appeared in city streets. In places people spread blankets and picnicked on the asphalt, and a few even camped for a time on the A1. The day felt closer to a shared outing than a hardship.\n\nPolice recorded few breaches. Officers in several cantons spent their time guiding walkers rather than stopping cars. The quiet reached from Geneva and Zurich into the mountain valleys.\n\nTwo further car-free Sundays are already planned. Officials hope the bans, together with new speed limits, will see the country through the winter without stricter rationing.\n\nThose quiet Sundays still matter because they remain a clear example of how a whole country can slow down together when supplies run short. The questions they raised about energy, travel and shared effort have not gone away.",
+  "sources": [
+    {
+      "title": "Schweiz - Vor 40 Jahren: Sonntagsfahrverbot in der Schweiz",
+      "url": "https://www.srf.ch/news/schweiz/schweiz-vor-40-jahren-sonntagsfahrverbot-in-der-schweiz"
+    },
+    {
+      "title": "Campieren auf der A1: Autofreie Sonntage vor 50 Jahren",
+      "url": "https://www.nzz.ch/fotografie/als-die-schweiz-vor-50-jahren-still-stand-ld.1762159"
+    },
+    {
+      "title": "Sonntagsfahrverbot",
+      "url": "https://www.journal21.ch/historisches-bild/sonntagsfahrverbot"
+    }
+  ],
+  "image": {
+    "alt": "Empty motorway with bicycles and a wooden cart.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-swiss-roads-fall-silent-on-first-fuel-saving-sunday-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-swiss-roads-fall-silent-on-first-fuel-saving-sunday-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  },
+  "publishedAt": "2026-11-25T19:59:41.757Z",
+  "model": "grok-4.7"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "story": "The European Parliament approved a broad package of updated agreements with Switzerland by 584 votes to 13 in Strasbourg on Wednesday, sending the next steps back to Bern.",
+    "category": "Switzerland",
+    "sources": [
+      "https://www.swissinfo.ch/eng/foreign-affairs/eu-parliament-approves-the-switzerland-eu-treaty-package/92436424",
+      "https://www.letemps.ch/en/switzerland/bilaterals-iii-glide-through-the-european-parliament-like-a-knife-through-butter-with-a-resounding-yes"
+    ]
+  },
+  {
+    "story": "South Africa’s Western Cape High Court set aside the Section 89 panel report on the Phala Phala affair as unlawful, halting parliamentary impeachment steps against President Cyril Ramaphosa.",
+    "category": "South Africa",
+    "sources": [
+      "https://iol.co.za/news/crime-and-courts/2026-11-25-court-sets-aside-phala-phala-panel-report-clearing-ramaphosa/",
+      "https://www.dailymaverick.co.za/article/2026-11-25-ramaphosa-succeeds-in-setting-aside-impeachment-report/"
+    ]
+  },
+  {
+    "story": "China launched Shenzhou-24 from Jiuquan carrying Muhammad Zeeshan Ali, the first Pakistani to reach orbit and the first foreign astronaut to board the Tiangong space station.",
+    "category": "Science",
+    "sources": [
+      "https://www.reuters.com/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-first-foreign-2026-11-25/",
+      "https://www.theguardian.com/science/2026/nov/25/china-sends-first-pakistani-astronaut-into-space"
+    ]
+  },
+  {
+    "story": "The US Army detonated the nation’s entire stockpile of about five tons of degraded lead azide at an Iowa ammunition plant, and early EPA monitors detected no airborne lead.",
+    "category": "Environment",
+    "sources": [
+      "https://apnews.com/article/iowa-lead-detonation-714e040baedc1cd90c2ba688be76cfc7",
+      "https://iowacapitaldispatch.com/2026/11/25/developing-army-detonates-degraded-lead-azide-in-middletown/"
+    ]
+  },
+  {
+    "story": "A federal jury in Brooklyn convicted Chinese telecom company Huawei on 10 of 12 counts, including bank fraud and conspiracy to steal trade secrets, while acquitting it of racketeering.",
+    "category": "Technology",
+    "sources": [
+      "https://apnews.com/article/huawei-racketeering-trial-verdict-b39ac780e2e31140015a1be02f0329ab",
+      "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo"
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "id": "2026-11-25-army-detonates-unstable-lead-azide-stockpile-in-iowa",
+  "slug": "2026-11-25-army-detonates-unstable-lead-azide-stockpile-in-iowa",
+  "story": "The US Army detonated the nation’s entire stockpile of about five tons of degraded lead azide at an Iowa ammunition plant, and early EPA monitors detected no airborne lead.",
+  "category": "Environment",
+  "title": "Army detonates unstable lead azide stockpile in Iowa",
+  "dek": "The US Army detonated about five tons of degraded lead azide at an Iowa plant on Wednesday, and early air monitors found no airborne lead.",
+  "tags": [
+    "iowa",
+    "us-army",
+    "lead",
+    "environment"
+  ],
+  "body": "The United States Army detonated the country’s entire remaining stockpile of lead azide on Wednesday morning at the Iowa Army Ammunition Plant in Middletown. Major General Eric Shirley said all 68 barrels, holding roughly five tons of the degraded material, were destroyed. There were no secondary explosions and no notable damage nearby. One hour later, Environmental Protection Agency real-time air monitors reported zero detection of airborne lead across the region.\n\nLead azide is a primary explosive. It is the small, sensitive charge that starts larger munitions. The compound is mostly lead by weight. The military consolidated its leftover stock at the Iowa plant around 2009 as it moved away from the material because storage and transport were so difficult. Some of it was already more than sixty years old. It had been kept in barrels with water and ethanol, plus packing material, meant to keep it from freezing or degrading.\n\nA March inspection found that the lead azide had crystallized inside and on the barrels. In that form it is far more sensitive to shock, friction and temperature swings. Experts from the Army, the FBI and the Bureau of Alcohol, Tobacco, Firearms and Explosives concluded the barrels could not be moved or opened safely. Even taking off a lid risked setting the lot off. A chemical treatment contract was canceled for the same reason. Leaving the material through a cold winter raised the chance of an uncontrolled blast. A planned detonation, surrounded by sand barriers, lime fill, water mist and thousands of gallons of foam, was judged the least dangerous choice.\n\nLawsuits from environmental groups and official caution delayed the blast several times from an earlier date. The extra days allowed more containment work. Shirley said the operation reduced the risk to nearby communities as close to zero as humanly possible. EPA Administrator Lee Zeldin said the early results exceeded expectations, but he urged people not to treat the first readings as a final all-clear. He noted that after the 2001 attacks officials had told the public the air was safe too soon.\n\n## What remains to be checked\n\nAir monitors catch only what is floating at the moment. Lead does not break down or wash away easily. Any fine dust that settled on soil, farm fields, windowsills or playgrounds can stay and be tracked indoors. The EPA had already taken more than 1,200 baseline samples of air, soil, dust and water, and it plans further testing in the days and weeks ahead. University of Iowa researchers are collecting their own samples for an independent record. Officials have said residents can request testing of homes, schools and land. Before the blast, agriculture officials had flagged roughly 350 farms in Iowa and Missouri as possibly in the path of any plume. Early signs suggest the barriers held better than the models feared, but that is not yet proven on the ground.\n\nThe day-before-Thanksgiving timing at least gave people a practical reason to stay inside with the windows closed. The larger point is simpler. Old military chemicals, left too long in imperfect storage, can become an urgent problem for the towns around them. Public pressure and court delays appear to have produced stronger precautions than the first plan. Environmental groups still want a clear account of how the stockpile was allowed to reach this state. The explosive risk looks removed. Whether any lead remains where people live and farm, and how thoroughly it will be found and cleaned, is the part that will take longer to know.",
+  "sources": [
+    {
+      "title": "Army officials call lead azide detonation successful, still monitoring area for potential toxins",
+      "url": "https://iowacapitaldispatch.com/2026/11/25/developing-army-detonates-degraded-lead-azide-in-middletown/"
+    },
+    {
+      "title": "Army detonates lead azide in Iowa despite toxic plume fears",
+      "url": "https://apnews.com/article/iowa-lead-detonation-714e040baedc1cd90c2ba688be76cfc7"
+    },
+    {
+      "title": "Initial Air Monitoring Shows Zero Detection of Airborne Lead Following Controlled Detonation at Iowa Army Ammunition Plant",
+      "url": "https://www.epa.gov/newsreleases/initial-air-monitoring-shows-zero-detection-airborne-lead-following-controlled"
+    },
+    {
+      "title": "Detonating A Huge Pile of Lead Azide. Really. (Updated)",
+      "url": "https://www.science.org/content/blog-post/detonating-huge-pile-lead-azide-really"
+    }
+  ],
+  "publishedAt": "2026-11-25T19:55:12.069Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Sand barriers and a light mist near a bunker in open Iowa farmland.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-army-detonates-unstable-lead-azide-stockpile-in-iowa-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-army-detonates-unstable-lead-azide-stockpile-in-iowa-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

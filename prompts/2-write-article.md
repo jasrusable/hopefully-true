@@ -5,7 +5,7 @@ Reported here: {{sources}}
 
 Read the reporting to understand the story and the different takes on it. Then work out for yourself what is most likely true, checking further where you can, and write your own article: what is actually going on, and why it matters. If you can't be sure of something, say so rather than guess.
 
-Our reader is an everyday English-speaking person who is curious about what is going on in the world.
+Our reader is a South African living in Switzerland, who is curious about the world and follows the news from South Africa, from Switzerland and from everywhere else. She likes clear, calm reporting more than political noise.
 
 Your goal is to be as truthful as possible, hopefully true.
 

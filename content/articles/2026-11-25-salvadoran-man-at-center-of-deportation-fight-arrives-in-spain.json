@@ -1,0 +1,55 @@
+{
+  "id": "2026-11-25-salvadoran-man-at-center-of-deportation-fight-arrives-in-spain",
+  "slug": "2026-11-25-salvadoran-man-at-center-of-deportation-fight-arrives-in-spain",
+  "story": "Kilmar Abrego Garcia, the Salvadoran man whose mistaken deportation to El Salvador became a major legal case, voluntarily left the United States for Spain.",
+  "category": "US",
+  "title": "Salvadoran man at center of deportation fight arrives in Spain",
+  "dek": "Kilmar Abrego Garcia arrived in Spain after leaving the United States on a commercial flight, ending a long court battle over his removal.",
+  "tags": [
+    "kilmar-abrego-garcia",
+    "immigration",
+    "spain",
+    "united-states"
+  ],
+  "body": "Kilmar Abrego Garcia arrived in Madrid on Wednesday morning after leaving the United States the night before. The 31-year-old Salvadoran national had become a symbol of the Trump administration’s deportation campaign during a legal fight that lasted nearly two years and reached the Supreme Court.\n\nHe boarded a commercial flight at Washington Dulles airport on Tuesday with his American wife and a lawyer. Immigration officers removed the ankle monitor he had worn for nearly a year. The airplane itself needed a little more time, delayed by mechanical trouble, before carrying him across the Atlantic. He did not speak to reporters on arrival but raised a fist. His lawyer said he entered on a tourist visa good for up to 90 days and is scheduled to speak about his experience in Spain and other countries.\n\nHomeland Security officials called the departure a self-deportation under a removal order. Secretary Markwayne Mullin said he was delighted. The department stated that Abrego Garcia paid for his own ticket, received no incentives, and will never be allowed back into the United States. They repeated accusations that he belongs to a gang and engaged in human smuggling, which he and his lawyers deny. Attorney Simon Sandoval-Moshenberg said the government had planned to send him in shackles on a charter flight to Liberia. Instead, he left as a free man to a country he chose. Maryland Senator Chris Van Hollen, who met him in a Salvadoran prison, welcomed the outcome as respecting his will.\n\n## From error to standoff\n\nAbrego Garcia entered the United States illegally as a teenager and lived in Maryland. In 2019 an immigration judge barred his removal to El Salvador after finding that a gang had threatened his life over his family’s pupusa business. He worked under supervision but held no permanent status.\n\nIn March 2025 he was arrested and deported to El Salvador’s CECOT prison despite that order. Officials later described it as an administrative error. Courts ordered his return, and he came back in June 2025 only to face human-smuggling charges from a 2022 traffic stop. A judge dismissed the charges in May 2026 as vindictive. The government appealed.\n\nOfficials then sought to deport him to African countries, most recently Liberia, rather than Costa Rica, which had offered to take him. Court orders blocked the removals. An October hearing was canceled without public explanation. A sealed order set this week as the deadline to leave.\n\n## Not the last word\n\nThe precise terms of the deal are not public. Lawyers call the Spain trip a temporary departure. Sandoval-Moshenberg said Abrego Garcia will choose where to settle for the next two years while waiting out the administration. His wife, a U.S. citizen, has sought legal status for him, and his team hopes a future administration will reunite the family in Maryland. Current officials say he will not return.\n\nThe saga matters because it tested how far courts can check deportation decisions after an error sent someone to a foreign prison. Officials kept seeking another country while judges slowed them down. In the end he left on a commercial flight rather than a government charter, but under a deadline and with his long-term return still in dispute. He is in Spain on a short tourist stay, free for the moment, and still choosing what comes next. The rules that follow a person can be harder to remove than an ankle monitor.",
+  "sources": [
+    {
+      "title": "Kilmar Abrego Garcia, mistakenly deported by the Trump administration, arrives in Spain after voluntarily leaving the US",
+      "url": "https://www.cnn.com/2026/11/24/politics/kilmar-abrego-garcia-self-deporting-to-spain"
+    },
+    {
+      "title": "Kilmar Abrego Garcia leaves U.S. and arrives in Spain",
+      "url": "https://www.cbsnews.com/news/kilmar-abrego-garcia-leaving-us-europe/"
+    },
+    {
+      "title": "Kilmar Abrego Garcia leaves U.S. voluntarily for Spain",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6053203/abrego-garcia-leaves-us"
+    },
+    {
+      "title": "Kilmar Abrego García arrives in Spain, ending deportation battle with U.S.",
+      "url": "https://www.washingtonpost.com/immigration/2026/11/24/kilmar-abrego-garcia/"
+    }
+  ],
+  "publishedAt": "2026-11-25T13:57:11.177Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Passport and boarding pass next to a globe.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-salvadoran-man-at-center-of-deportation-fight-arrives-in-spain-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-salvadoran-man-at-center-of-deportation-fight-arrives-in-spain-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

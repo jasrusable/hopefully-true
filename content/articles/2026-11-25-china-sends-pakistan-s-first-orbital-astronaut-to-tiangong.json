@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-25-china-sends-pakistan-s-first-orbital-astronaut-to-tiangong",
+  "slug": "2026-11-25-china-sends-pakistan-s-first-orbital-astronaut-to-tiangong",
+  "story": "China launched its Shenzhou-24 spacecraft from the Gobi Desert carrying Pakistani pilot Muhammad Zeeshan Ali, the first foreign astronaut on a Chinese crewed mission and the first Pakistani to reach orbit, to the Tiangong space station.",
+  "category": "Science",
+  "title": "China sends Pakistan's first orbital astronaut to Tiangong",
+  "dek": "A Pakistani pilot reached orbit aboard China’s Shenzhou-24 and boarded the Tiangong station, the first foreigner on a Chinese crewed flight.",
+  "tags": [
+    "china",
+    "pakistan",
+    "space",
+    "tiangong"
+  ],
+  "body": "China launched its Shenzhou-24 spacecraft from the Gobi Desert on Wednesday, carrying Pakistani pilot Muhammad Zeeshan Ali to the Tiangong space station. The 40-year-old flew as a payload specialist with Chinese commander Tang Hongbo and flight engineer Wu Yi. He is the first foreign astronaut on a Chinese crewed flight, and the first Pakistani to reach orbit.\n\nA Long March-2F rocket left the Jiuquan launch centre at 8:18 a.m. Beijing time. China’s space agency said the capsule separated about ten minutes later and called the launch a complete success. The ship docked at 11:56 a.m. with the front of the station’s core module, after a fast automatic link-up of about three and a half hours. The crew went inside at 2:35 p.m. and met the astronauts already there.\n\nAn earlier flight should not be mixed up with this one. In October 2023, Namira Salim took a short commercial hop with Virgin Galactic that crossed the edge of space and came straight back. She did not enter orbit. Ali’s mission is the orbital first. Pakistan cannot launch people itself, so the seat came through a deal with China.\n\n## From calligraphy class to orbit\n\nAli trained in Beijing for seven months after a human-spaceflight agreement in February 2025. The hard part, he has said, was enough Chinese to follow the switches, the software and the voice alerts. Calligraphy and table tennis were on the timetable too. He said he was carrying Pakistan’s name and the hopes of 250 million people. Prime Minister Shehbaz Sharif thanked President Xi Jinping and said the friendship was climbing past the Himalayas.\n\nThis year marks 75 years of diplomatic ties, begun in 1951. Space cooperation is younger, dating to satellite work in the early 1990s. A Pakistani-built rover is set to fly on a Chinese Moon mission around 2028. China, kept off the International Space Station, built Tiangong alone.\n\nPakistan’s space agency lists four experiments for Ali: a light radiation shield, carbon fibre meant to close tiny cracks by itself, quinoa seeds under radiation and very weak gravity, and microalgae that might help make oxygen and food. The wider mission is due to run more than 90 tests, mostly Chinese. He is expected to stay five to ten days, then return on Shenzhou-23, docked since May.\n\nThe handover is the unusual part. Zhu Yangzhu, already aboard, is staying a full year, reported as China’s first year-long stay. Lai Ka-ying, Hong Kong’s first astronaut, and Zhang Zhiyuan are due home with Ali. Tang, the first person to board Tiangong three times, and first-timer Wu are expected to remain about six months with Zhu.\n\nChina aims to land astronauts on the Moon by 2030. The United States is aiming for 2028. Whether either date holds is another question. Planning minister Ahsan Iqbal says Pakistan will one day fly its own astronauts, though no date is set. For now, the pilot who squeezed Mandarin into seven months is a guest in orbit.",
+  "sources": [
+    {
+      "title": "China's Shenzhou-24 carries Pakistan's first astronaut Muhammad Zeeshan Ali into space",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2e0j3kx28o"
+    },
+    {
+      "title": "China's Shenzhou-24 space flight takes off with Pakistani national as first foreign astronaut",
+      "url": "https://www.reuters.com/science/chinas-shenzhou-24-space-flight-takes-off-with-pakistani-national-first-foreign-2026-11-25/"
+    },
+    {
+      "title": "China's Shenzhou-24 spaceship docks with Tiangong space station",
+      "url": "http://www.china.org.cn/2026-11/25/content_118788815_3.shtml"
+    },
+    {
+      "title": "Shenzhou-24 astronauts enter Tiangong space station, meet Shenzhou-23 crew",
+      "url": "https://www.bastillepost.com/global/article/6397002-shenzhou-24-astronauts-enter-tiangong-space-station-meet-shenzhou-23-crew-2"
+    },
+    {
+      "title": "China’s Shenzhou 24 spacecraft docks at space station with first foreign astronaut",
+      "url": "https://www.nbcnews.com/world/china/china-shenzhou-24-spacecraft-docks-space-station-foreign-astronaut-rcna611251"
+    }
+  ],
+  "publishedAt": "2026-11-25T13:49:59.385Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "A spacecraft approaching a space station above Earth.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-china-sends-pakistan-s-first-orbital-astronaut-to-tiangong-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-china-sends-pakistan-s-first-orbital-astronaut-to-tiangong-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-25-houthi-drone-wounds-11-at-riyadh-tower-again",
+  "slug": "2026-11-25-houthi-drone-wounds-11-at-riyadh-tower-again",
+  "story": "Yemen's Houthi fighters struck a tower in Riyadh's financial district with a drone, injuring 11 people in the second attack on the site in less than a week.",
+  "category": "World",
+  "title": "Houthi drone wounds 11 at Riyadh tower again",
+  "dek": "A drone blamed on Yemen's Houthis struck a tower in Riyadh's financial district on Tuesday, injuring 11 people in a second attack there in under a week.",
+  "tags": [
+    "riyadh",
+    "houthis",
+    "saudi-arabia",
+    "yemen"
+  ],
+  "body": "On Tuesday a drone hit a tower in Riyadh's King Abdullah Financial District, wounding 11 people. Saudi civil defence said the injured were two Saudi citizens, two Indian nationals, three Nepali nationals and four Egyptian nationals. The Saudi-led coalition called the strike a cowardly terrorist attack by drone and said deliberate attacks on civilians would meet a firm response.\n\nThe coalition did not name the building. Three witnesses said the drone struck the Public Investment Fund tower, the tallest skyscraper in the capital and the headquarters of the sovereign wealth fund. Civil defence posted a photo of that tower with damage about halfway up the facade. The same building was struck on 19 November, damaging several floors but causing no injuries. A source told reporters that workers repairing the earlier damage were inside when the tower was hit again, and that at least two of the wounded suffered severe burns. Officials have not confirmed that account.\n\nA loudspeaker van warned people in the area to take cover. No alert reached mobile phones.\n\n## A war that refuses to stay quiet\n\nThe hit was the second on the financial district site in less than a week. An Aramco office building there was damaged on 8 November. Yemen's ceasefire, in place since 2022, collapsed in July amid the wider war between the United States and Iran. Since then the Iran-aligned Houthis have fired drones and missiles at Saudi airports, oil facilities and offices, while gaining ground inside Yemen near the Bab el-Mandeb strait. Coalition aircraft have struck Houthi-held areas in return.\n\nMost flights from abroad into Riyadh have been cancelled. Big gatherings have been postponed, including the AFC Asian Cup and an investment conference nicknamed Davos in the desert. The wealth fund sits at the centre of plans to move the economy beyond oil, so a second strike on its home is both costly and symbolic. Crown Prince Mohammed bin Salman said the kingdom would defend itself with strength and resolve.\n\nThe next day Houthi spokesman Yahya Saree claimed the group had attacked the financial district and the Ras Tanura refinery. Saudi forces said they intercepted four drones aimed at the refinery. The claims have not been independently verified, and on Tuesday itself the Houthis had not yet announced a new strike. Saudi officials later said air defences had stopped 209 aerial threats between late September and 24 November. Some still get through.\n\nIn Yemen the fighting since July has displaced hundreds of thousands of people, and both sides accuse the other of killing civilians. A tall glass tower makes an obvious target. Repair crews in Riyadh may not get much of a rest, which is one way to keep a glazier employed. Saudi leaders have promised a firm answer, and the Houthis have used these strikes as leverage before. Until the larger wars cool, ordinary people in both countries will keep paying the bill.",
+  "sources": [
+    {
+      "title": "Saudi civil defence says 11 injured in Houthi drone attack on Riyadh tower",
+      "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh"
+    },
+    {
+      "title": "Houthis hit Riyadh's tallest tower, 11 wounded, Saudi Civil defense says",
+      "url": "https://www.reuters.com/world/middle-east/saudi-led-coalition-says-tower-riyadh-finance-district-targeted-by-terrorist-2026-11-24/"
+    },
+    {
+      "title": "Saudi skyscraper hit again, coalition slams 'terrorist attack'",
+      "url": "https://www.channelnewsasia.com/world/saudi-skyscraper-hit-again-coalition-slams-terrorist-attack-6579126"
+    },
+    {
+      "title": "Houthis Claim Attacks on Riyadh Financial District and Saudi Oil Refinery",
+      "url": "https://www.kurdistan24.net/en/story/955515"
+    },
+    {
+      "title": "Saudi Arabia Intercepts 209 Houthi Aerial Threats in Two Months",
+      "url": "https://www.khaama.com/saudi-arabia-intercepts-209-houthi-aerial-threats/"
+    }
+  ],
+  "publishedAt": "2026-11-25T14:00:05.227Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Symbolic illustration of a skyscraper and a distant drone",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-25-houthi-drone-wounds-11-at-riyadh-tower-again-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-25-houthi-drone-wounds-11-at-riyadh-tower-again-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

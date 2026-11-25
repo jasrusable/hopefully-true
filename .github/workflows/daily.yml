@@ -2,10 +2,10 @@ name: Daily edition
 
 on:
   schedule:
-    # 05:00 Europe/Zurich all year. GitHub cron is UTC, so one entry per DST state;
+    # 04:37 Europe/Zurich all year, off the busy top of the hour, so it is ready by 05:00. GitHub cron is UTC, so one entry per DST state;
     # the guard below skips the one that doesn't match today's Zurich offset.
-    - cron: '0 3 * * *'   # 05:00 CEST (summer, UTC+2)
-    - cron: '0 4 * * *'   # 05:00 CET (winter, UTC+1)
+    - cron: '37 2 * * *'   # 04:37 CEST (summer, UTC+2)
+    - cron: '37 3 * * *'   # 04:37 CET (winter, UTC+1)
   workflow_dispatch:
     inputs:
       generate:
@@ -36,8 +36,8 @@ jobs:
           off=$(TZ=Europe/Zurich date +%z)
           run=true
           if [ "${{ github.event_name }}" = schedule ]; then
-            if [ "${{ github.event.schedule }}" = '0 3 * * *' ] && [ "$off" != +0200 ]; then run=false; fi
-            if [ "${{ github.event.schedule }}" = '0 4 * * *' ] && [ "$off" != +0100 ]; then run=false; fi
+            if [ "${{ github.event.schedule }}" = '37 2 * * *' ] && [ "$off" != +0200 ]; then run=false; fi
+            if [ "${{ github.event.schedule }}" = '37 3 * * *' ] && [ "$off" != +0100 ]; then run=false; fi
           fi
           echo "Zurich offset $off, run=$run"
           echo "run=$run" >> "$GITHUB_OUTPUT"

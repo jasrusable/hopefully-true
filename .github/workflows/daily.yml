@@ -16,6 +16,10 @@ on:
         description: 'Generate new articles (untick to just rebuild and deploy)'
         type: boolean
         default: true
+      force:
+        description: "Replace today's edition if it already exists (removes today's previous articles first)"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -66,8 +70,12 @@ jobs:
             want=true
           fi
           if [ "$want" = true ] && [ -f "content/stories/${today}.json" ]; then
-            echo "Today's edition already exists (content/stories/${today}.json); skipping generate"
-            want=false
+            if [ "${{ inputs.force }}" = true ]; then
+              echo "Today's edition already exists; force=true, so it will be replaced"
+            else
+              echo "Today's edition already exists (content/stories/${today}.json); skipping generate"
+              want=false
+            fi
           fi
           if [ "$want" = true ]; then
             this="${{ github.run_id }}"
@@ -101,6 +109,18 @@ jobs:
       - name: Check the README shows the current prompts
         if: steps.guard.outputs.run == 'true'
         run: npm run check
+
+      - name: Replace today's existing edition
+        if: steps.guard.outputs.run == 'true' && steps.already.outputs.generate == 'true' && inputs.force
+        run: |
+          today=$(TZ=Europe/Zurich date +%F)
+          # Only this Zurich day: stories, articles, history pieces, and their images.
+          # Other days are left untouched. Old /a/<slug>/ URLs for today will 404 after deploy,
+          # so the site is not left showing two editions for the same day.
+          rm -f "content/stories/${today}.json"                 "content/onthisday/${today}.json"                 "content/lessons/${today}.json"
+          rm -f content/articles/${today}-*.json
+          rm -f content/images/${today}-*
+          echo "Removed the existing $today edition so it can be regenerated"
 
       - name: Generate today's articles
         id: generate

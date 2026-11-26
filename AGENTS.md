@@ -32,6 +32,7 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 - `npm run check` – verify the README matches `prompts/`.
 - `npm run serve` – preview `out/` at http://localhost:8787.
 - Cheap full-run test: `CONTENT_DIR=scratch ARTICLES_PER_DAY=2 PICTURES=off npm run daily`.
+- Replace today's already-published edition: `gh workflow run daily.yml --ref main -f generate=true -f force=true`. `force` is off by default and is never set on the schedule, so the normal skip-if-exists guard is unchanged. Only that Zurich day's files are removed first; other days are left alone. Old article URLs for the replaced day 404 after deploy.
 - Worker time-zone check: `node worker/src/time.test.js`.
 - Deploy the scheduler: `wrangler deploy` from `worker/`. The `GITHUB_TOKEN` secret must be a fine-grained PAT limited to this repo (Actions: read and write, Contents: read). Set it with `pbpaste | wrangler secret put GITHUB_TOKEN` so the value is never printed. A `POST /dispatch` with that token runs `generate=false` only; do not fire `generate=true` by hand, it costs money and publishes an edition.
 

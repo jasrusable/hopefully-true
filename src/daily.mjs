@@ -3,7 +3,7 @@
 // holding back HISTORY_RESERVE_USD so "On this day" and "From history" always fit.
 import fs from 'node:fs';
 import path from 'node:path';
-import { CONTENT, ARTICLES_PER_DAY, MAX_RUN_USD, STORY_USD, ON_THIS_DAY_USD, LESSON_USD, HISTORY_RESERVE_USD, MODELS, zurichDay } from './config.mjs';
+import { CONTENT, ARTICLES_PER_DAY, MAX_RUN_USD, STORY_USD, ON_THIS_DAY_USD, LESSON_USD, HISTORY_RESERVE_USD, MODELS, zurichDay, classify } from './config.mjs';
 import { loadEnv } from './env.mjs';
 import { readAll, recentTitles } from './archive.mjs';
 import { findStories } from './find-stories.mjs';
@@ -51,7 +51,7 @@ async function news() {
   // 1. Find stories, once a day. The list is saved, so a second run doesn't pay for it again.
   let stories;
   if (fs.existsSync(storiesFile)) {
-    stories = JSON.parse(fs.readFileSync(storiesFile, 'utf8'));
+    stories = JSON.parse(fs.readFileSync(storiesFile, 'utf8')).map(s => ({ ...s, ...classify(s) }));
   } else {
     const recent = recentTitles(saved);
     const found = await findStories({ date, count: ARTICLES_PER_DAY, recent });
@@ -73,7 +73,7 @@ async function news() {
       spent += usd;
       const id = `${date}-${slugify(article.headline)}`;
       const entry = {
-        id, slug: id, story: story.story, category: story.category,
+        id, slug: id, story: story.story, topic: story.topic || null, place: story.place || null,
         title: article.headline.trim(), dek: article.summary.trim(),
         tags: [...new Set(article.tags.map(slugify).filter(Boolean))].slice(0, 4),
         body: article.body.trim(),

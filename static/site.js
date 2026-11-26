@@ -24,8 +24,8 @@
   function setPill(a){pills.forEach(function(p){p===a?p.setAttribute('aria-current','page'):p.removeAttribute('aria-current')})}
   function setUrl(v){var u=new URL(location.href);v?u.searchParams.set('q',v):u.searchParams.delete('q');history.replaceState(null,'',u.pathname+u.search+u.hash)}
   function load(){return data?Promise.resolve(data):fetch('/search.json').then(function(r){return r.json()}).then(function(j){
-    j.forEach(function(a){a._t=words(a.t);a._g=words(a.g.join(' '));a._w=a._t.concat(a._g,words(a.d+' '+a.x+' '+a.c))});return data=j})}
-  function card(a){return '<article class="card"><div class="text"><p class="kicker">'+esc(a.c)+' · <time datetime="'+a.p+'">'+fmt(a.p)+'</time></p><h2><a href="'+a.u+'">'+esc(a.t)+'</a></h2><p class="dek">'+esc(a.d)+'</p></div>'+(a.i?'<a class="thumb" href="'+a.u+'" tabindex="-1" aria-hidden="true"><img src="'+a.i+'" alt="" loading="lazy" width="480" height="270"></a>':'')+'</article>'}
+    j.forEach(function(a){a._t=words(a.t);a._g=words(a.g.join(' '));a._w=a._t.concat(a._g,words(a.d+' '+a.x+' '+a.c+' '+(a.place||'')+' '+(a.topic||'')))});return data=j})}
+  function card(a){var k=esc(a.c||'');return '<article class="card"><div class="text"><p class="kicker">'+(k?k+' · ':'')+'<time datetime="'+a.p+'">'+fmt(a.p)+'</time></p><h2><a href="'+a.u+'">'+esc(a.t)+'</a></h2><p class="dek">'+esc(a.d)+'</p></div>'+(a.i?'<a class="thumb" href="'+a.u+'" tabindex="-1" aria-hidden="true"><img src="'+a.i+'" alt="" loading="lazy" width="480" height="270"></a>':'')+'</article>'}
   function run(){
     var v=q.value.trim(),terms=words(v);setUrl(v);
     if(!terms.length){results.hidden=true;results.innerHTML='';page.hidden=false;status.textContent='';status.hidden=true;setPill(current);return}

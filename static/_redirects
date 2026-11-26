@@ -1,2 +1,10 @@
 /search/ / 301
 /search / 301
+
+# Places used to live under /category/; keep those URLs working.
+/category/switzerland /place/switzerland/ 301
+/category/switzerland/ /place/switzerland/ 301
+/category/switzerland/* /place/switzerland/:splat 301
+/category/south-africa /place/south-africa/ 301
+/category/south-africa/ /place/south-africa/ 301
+/category/south-africa/* /place/south-africa/:splat 301

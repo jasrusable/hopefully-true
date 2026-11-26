@@ -1,7 +1,7 @@
 // Step 1: find the day's stories (prompts/1-find-stories.md).
 import { ask, normalizeUrl } from './xai.mjs';
 import { prompt } from './prompt.mjs';
-import { CATEGORIES, MODELS } from './config.mjs';
+import { TOPICS, PLACES, joinList, MODELS } from './config.mjs';
 
 const schema = {
   type: 'object', additionalProperties: false, required: ['stories'],
@@ -9,10 +9,11 @@ const schema = {
     stories: {
       type: 'array',
       items: {
-        type: 'object', additionalProperties: false, required: ['story', 'category', 'sources'],
+        type: 'object', additionalProperties: false, required: ['story', 'topic', 'place', 'sources'],
         properties: {
           story: { type: 'string', description: 'One plain sentence: what happened, who was involved and where.' },
-          category: { type: 'string', enum: CATEGORIES },
+          topic: { type: 'string', enum: TOPICS },
+          place: { type: 'string', enum: PLACES },
           sources: { type: 'array', items: { type: 'string' }, description: 'One or two links to the specific news articles that report it (not homepages).' },
         },
       },
@@ -25,6 +26,8 @@ export async function findStories({ date, count, recent, promptFile = '1-find-st
     model: MODELS.find, schema, search: ['web_search', 'x_search'], maxSearches: 12,
     prompt: prompt(promptFile, {
       date, count,
+      places: joinList(PLACES),
+      topics: joinList(TOPICS),
       recent_stories: recent.length ? recent.map(t => `- ${t}`).join('\n') : '- (none)',
     }),
   });

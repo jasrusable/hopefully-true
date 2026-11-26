@@ -5,7 +5,33 @@ import { fileURLToPath } from 'node:url';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const CONTENT = path.resolve(ROOT, process.env.CONTENT_DIR || 'content');
 
-export const CATEGORIES = ['World', 'Politics', 'Business', 'Technology', 'Science', 'Health', 'Environment', 'Sport', 'Culture', 'US', 'Switzerland', 'South Africa'];
+export const TOPICS = ['Politics', 'Business', 'Technology', 'Science', 'Health', 'Environment', 'Sport', 'Culture'];
+export const PLACES = ['South Africa', 'Switzerland']; // add a place with one more string here
+
+// "South Africa and Switzerland"; stays grammatical when a place is added.
+export function joinList(items) {
+  if (items.length <= 1) return items[0] || '';
+  if (items.length === 2) return `${items[0]} and ${items[1]}`;
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+}
+
+// Map a stored article or story onto topic + place. New items already have those fields.
+// Old items have a single category: a place name becomes place (topic unknown), a topic
+// name becomes topic (no place), and World or US become neither.
+export function classify(item) {
+  if (item.topic || item.place) {
+    return {
+      topic: TOPICS.includes(item.topic) ? item.topic : null,
+      place: PLACES.includes(item.place) ? item.place : null,
+    };
+  }
+  const c = item.category;
+  if (PLACES.includes(c)) return { topic: null, place: c };
+  if (TOPICS.includes(c)) return { topic: c, place: null };
+  return { topic: null, place: null };
+}
+
+export const dimsLabel = ({ topic, place }) => [place, topic].filter(Boolean).join(' · ');
 
 export const ARTICLES_PER_DAY = Number(process.env.ARTICLES_PER_DAY || 5);
 export const MAX_RUN_USD = Number(process.env.MAX_DAILY_USD || 3.5); // a run never plans to spend more than this

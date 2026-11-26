@@ -6,7 +6,7 @@ import path from 'node:path';
 import { loadEnv } from './env.mjs';
 loadEnv();
 
-import { ROOT, CONTENT, ARTICLES_PER_DAY, MODELS, zurichDay } from './config.mjs';
+import { ROOT, CONTENT, ARTICLES_PER_DAY, MODELS, zurichDay, dimsLabel } from './config.mjs';
 import { readAll, recentTitles } from './archive.mjs';
 import { findStories } from './find-stories.mjs';
 import { writeArticle } from './write-article.mjs';
@@ -110,7 +110,7 @@ async function runHeadlines({ prompt: promptFile = '1-find-stories.md' } = {}) {
     '',
     ...stories.map((s, i) => {
       const sources = (s.sources || []).length ? s.sources.map(u => `- ${u}`).join('\n') : '- (none)';
-      return `## ${i + 1}. ${s.story}\n\nCategory: ${s.category}\n\nSources:\n${sources}\n`;
+      return `## ${i + 1}. ${s.story}\n\nPlace: ${s.place || '—'}\n\nTopic: ${s.topic || '—'}\n\nSources:\n${sources}\n`;
     }),
   ].join('\n') + '\n';
 
@@ -126,7 +126,7 @@ async function runHeadlines({ prompt: promptFile = '1-find-stories.md' } = {}) {
   console.log('');
   stories.forEach((s, i) => {
     console.log(`${i + 1}. ${s.story}`);
-    const extra = s.category + (s.sources?.[0] ? ` — ${s.sources[0]}` : '');
+    const extra = [dimsLabel(s), s.sources?.[0]].filter(Boolean).join(' — ');
     console.log(`   ${extra}`);
   });
   console.log('');

@@ -18,7 +18,7 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 - `src/env.mjs` – loads `.env.local` (and `.env`) without overriding variables already set; never logs values.
 - `src/build-site.mjs` – builds the static site into `out/`.
 - `src/sync-readme.mjs` – copies the prompts into the README.
-- `src/config.mjs` – categories, models, articles per day, budget.
+- `src/config.mjs` – topics, places, models, articles per day, budget.
 - `static/` – CSS, the small site script, fonts, Cloudflare `_headers`.
 - `content/` – generated articles, images, history pieces (`onthisday/`, `lessons/`) and daily story lists (committed by CI).
 

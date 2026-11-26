@@ -120,7 +120,7 @@ We have covered these on this date before, so pick something else:
 3. **On this day, and from history.** One call with web search finds a worthwhile event, discovery or occasion from this calendar date in an earlier year and writes it up like a news story from that day, with a line on why it still matters and a small illustration; it is told what it covered on this date before. If none of its sources is a page the search really returned, that day has no “On this day”. Then one more call with web search picks a person from history, philosophy or science, with a quote traced to their own book, letter or speech, writes about what it means and who they were (up to about a three-minute read), and describes a painting to go with it. The image model then paints that scene in a style from the person's own time and place, never a portrait. It is told the last 90 names so nobody repeats within three months. If no real source comes back, or anything goes wrong, that day simply has no moment from history; the news still publishes.
 4. **Build.** A small script turns the saved articles into plain HTML pages, with places, topics, tags and search, plus an RSS feed, sitemaps and the titles, descriptions and structured data search engines and link previews read. They are published on Cloudflare Pages. The front page shows the last three days, each ending with “On this day” and its moment from history; each of those also has its own page, and the History page lists them all.
 
-A GitHub Actions workflow runs this every day at 05:00 Zurich time. It saves the new articles back into this repository (the repository is the archive), and only publishes if everything worked, so a bad run never replaces the previous edition.
+A Cloudflare Worker (`hopefully-true-daily`) starts the GitHub Actions workflow at 04:37 Europe/Zurich every morning, so the edition is ready around 05:00. GitHub's own cron is kept as a fallback, and it skips generation if today's edition is already in the repository. The workflow saves the new articles back into this repository (the repository is the archive), and only publishes if everything worked, so a bad run never replaces the previous edition.
 
 ## The code
 
@@ -143,6 +143,7 @@ src/
   config.mjs          settings: topics, places, models, articles per day, budget
 static/               stylesheet, search script, fonts, Cloudflare headers
 content/              articles, illustrations, the history pieces (onthisday/, lessons/) and each day's story list
+worker/               Cloudflare Worker that starts the daily GitHub Actions workflow at 04:37 Zurich time
 ```
 
 ## Cost
@@ -172,6 +173,26 @@ npm run article -- 3 --prompt path/to/alt-write.md
 ```
 
 To try a full daily run without touching the real archive, set `CONTENT_DIR=scratch` and `ARTICLES_PER_DAY=3` (add `PICTURES=off` to skip the illustrations).
+
+## Scheduling
+
+The daily run is started by the `hopefully-true-daily` Cloudflare Worker, which cron-fires at 02:37 and 03:37 UTC and only then calls GitHub's `workflow_dispatch` (with `generate=true`) when the time in Europe/Zurich is 04:xx. That is 04:37 all year, including across DST. The Worker lives in `worker/`. It needs a GitHub fine-grained personal access token stored as the `GITHUB_TOKEN` Worker secret (Actions: read and write, Contents: read, only this repository).
+
+The GitHub workflow in `.github/workflows/daily.yml` keeps its own 02:37 and 03:37 UTC cron as a fallback, in case the Worker does not fire. Before generating, that fallback checks whether today's Zurich edition already exists in `content/stories/` or another run of this workflow has already started today, so two editions are never written on the same day. A `workflow_dispatch` from the Worker is not subject to the workflow's DST offset guard.
+
+To deploy the Worker (from `worker/`, with [Wrangler](https://developers.cloudflare.com/workers/wrangler/) logged in):
+
+```sh
+wrangler deploy
+```
+
+To set or rotate the token without printing it, pipe it into Wrangler, for example from the clipboard after creating it on GitHub:
+
+```sh
+pbpaste | wrangler secret put GITHUB_TOKEN
+```
+
+A protected `POST /dispatch` on the Worker, authorised with `Authorization: Bearer <GITHUB_TOKEN>`, starts a rebuild-only run (`generate=false`). It cannot generate a new edition. You can also test the schedule locally with `wrangler dev --test-scheduled` and a request to `/cdn-cgi/local/scheduled`.
 
 ## Licence
 

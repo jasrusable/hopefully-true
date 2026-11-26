@@ -21,6 +21,7 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 - `src/config.mjs` – topics, places, models, articles per day, budget.
 - `static/` – CSS, the small site script, fonts, Cloudflare `_headers`.
 - `content/` – generated articles, images, history pieces (`onthisday/`, `lessons/`) and daily story lists (committed by CI).
+- `worker/` – Cloudflare Worker `hopefully-true-daily`. Its cron (02:37 and 03:37 UTC) starts `.github/workflows/daily.yml` via `workflow_dispatch` only when Zurich local time is 04:xx, so the edition begins at 04:37 Europe/Zurich year-round. The GitHub cron in that workflow is a fallback and skips generate if today's edition already exists.
 
 ## Commands
 
@@ -31,6 +32,8 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 - `npm run check` – verify the README matches `prompts/`.
 - `npm run serve` – preview `out/` at http://localhost:8787.
 - Cheap full-run test: `CONTENT_DIR=scratch ARTICLES_PER_DAY=2 PICTURES=off npm run daily`.
+- Worker time-zone check: `node worker/src/time.test.js`.
+- Deploy the scheduler: `wrangler deploy` from `worker/`. The `GITHUB_TOKEN` secret must be a fine-grained PAT limited to this repo (Actions: read and write, Contents: read). Set it with `pbpaste | wrangler secret put GITHUB_TOKEN` so the value is never printed. A `POST /dispatch` with that token runs `generate=false` only; do not fire `generate=true` by hand, it costs money and publishes an edition.
 
 ## Principles
 

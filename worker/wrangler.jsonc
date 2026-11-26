@@ -1,0 +1,13 @@
+{
+  "name": "hopefully-true-daily",
+  "main": "src/index.js",
+  "compatibility_date": "2026-11-26",
+  "account_id": "2f929a8e0a3bf441e78972f0dfa1717a",
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "triggers": {
+    // 04:37 Europe/Zurich year-round. Cron is UTC, so both DST offsets fire;
+    // the Worker only dispatches when Zurich local time is 04:xx.
+    "crons": ["37 2 * * *", "37 3 * * *"]
+  }
+}

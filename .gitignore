@@ -9,3 +9,7 @@ node_modules/
 /data/
 
 /dry-run/
+
+/worker/.dev.vars*
+/worker/.wrangler/
+

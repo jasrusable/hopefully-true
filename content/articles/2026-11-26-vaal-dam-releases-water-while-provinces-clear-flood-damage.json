@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-26-vaal-dam-releases-water-while-provinces-clear-flood-damage",
+  "slug": "2026-11-26-vaal-dam-releases-water-while-provinces-clear-flood-damage",
+  "story": "Authorities opened a sluice gate at the Vaal Dam after heavy rain pushed it above full capacity, while Gauteng and Mpumalanga cleaned up from flash floods that damaged homes and roads.",
+  "topic": "Environment",
+  "place": "South Africa",
+  "title": "Vaal Dam releases water while provinces clear flood damage",
+  "dek": "Water authorities opened a sluice gate at the overfull Vaal Dam on Thursday as Gauteng and Mpumalanga cleared flood debris and responded to drownings.",
+  "tags": [
+    "vaal-dam",
+    "floods",
+    "gauteng",
+    "mpumalanga"
+  ],
+  "body": "Authorities opened one sluice gate at the Vaal Dam on Thursday afternoon after heavy rain in the upper catchment pushed the reservoir above its full supply level. At 7am it stood at 111.1 percent with inflows near 756 cubic metres per second, rising to 111.64 percent and about 788 cubic metres per second by 2pm. An official update said the gate opened later than the planned midday time because of technical challenges. The extra outflow, expected at 130 to 150 cubic metres per second, will flow towards the Vaal Barrage and then to Bloemhof Dam.\n\nThe department stressed that one open gate does not by itself mean flooding. River levels and speeds may still rise, so people near Vereeniging, Vanderbijlpark, Vaalpark, Parys and other spots along the Upper and Middle Vaal have been asked to stay alert, avoid fast water and flooded bridges, and keep children and livestock off the banks.\n\n## Clearing the streets\n\nGauteng and Mpumalanga spent Thursday clearing the mess from Wednesday’s flash floods. Mud, rocks and branches covered roads, some bridges stayed closed for a time, traffic lights failed and fallen trees cut power in places. Crews unblocked drains in Alexandra and checked crossings such as Belgrave Bridge in Bryanston.\n\nA Bosmont resident described a canal full of rubbish and growing trees that turns into a torrent in heavy rain because it is seldom cleaned. In Tshwane the Bronkhorstspruit plant paused treatment when raw water became too silty. Police said most major roads had reopened but saturated ground could flood again with fresh rain.\n\nIn Mpumalanga’s Gert Sibande district the rains were linked to three drownings of boys. A 17-year-old died in Morgenzon Dam on Tuesday while fishing and his body was recovered, and a body believed to be that of a 15-year-old who slipped in the Emzinoni River on Wednesday was retrieved the next day. A 10-year-old went missing at a Sheepmoor dam on Wednesday, and searches continued on Thursday after younger children delayed reporting it. Officials also assessed flood damage at KwaMhlanga Hospital.\n\n## Keeping the balance\n\nThe Vaal Dam is built to hold more than its nominal full mark and to release water through gates in a controlled way. That spare capacity, about a quarter extra, lets operators protect the wall and give downstream communities notice. An overfull dam is usually a relief in a country that knows drought, provided the gates work and the smaller drains in towns can cope. Bloemhof Dam sat at 88.9 percent in the morning and was due to increase its own outflow to around 300 cubic metres per second so it stays at or below 90 percent during rehabilitation work.\n\nOfficials will keep watching inflows and river conditions and will adjust releases as needed, with disaster teams and municipalities already informed. Residents are urged to follow those updates and to treat swollen rivers with respect. The search for the missing boy continues and cleanup crews will work until the streets are clear. More showers remain possible, so both the dam operators and the people with brooms may have another long day ahead.",
+  "sources": [
+    {
+      "title": "Vaal Dam opens sluice gate as water levels rise",
+      "url": "https://www.sanews.gov.za/south-africa/vaal-dam-opens-sluice-gate-water-levels-rise"
+    },
+    {
+      "title": "Gauteng clears debris, Mpumalanga drownings cast shadow after Wednesday's flash flooding",
+      "url": "https://www.citizen.co.za/news/south-africa/weather/gauteng-clears-debris-mpumalanga-drownings-cast-shadow-after-wednesdays-flash-flooding-pics-and-video/"
+    },
+    {
+      "title": "Body retrieved in Emzinoni River, search continues for 10-year-old boy in Sheepmoor",
+      "url": "https://www.saps.gov.za/newsroom/msspeechdetail.php?nid=51715"
+    },
+    {
+      "title": "Vaal Dam releases water after rising above 111% capacity following heavy rains",
+      "url": "https://www.ewn.co.za/2026/11/26/vaal-dam-releases-water-after-rising-above-111-capacity-following-heavy-rains"
+    }
+  ],
+  "publishedAt": "2026-11-26T19:32:27.903Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Dam releasing water steadily into a river.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-26-vaal-dam-releases-water-while-provinces-clear-flood-damage-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-26-vaal-dam-releases-water-while-provinces-clear-flood-damage-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

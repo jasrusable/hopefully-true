@@ -1,0 +1,60 @@
+{
+  "id": "2026-11-26-moya-re-elected-tshwane-mayor-in-four-party-deal",
+  "slug": "2026-11-26-moya-re-elected-tshwane-mayor-in-four-party-deal",
+  "story": "ActionSA’s Nasiphi Moya was re-elected mayor of Tshwane on Thursday after a coalition including the ANC, the EFF and the MK Party backed her over the DA’s Cilliers Brink.",
+  "topic": "Politics",
+  "place": "South Africa",
+  "title": "Moya re-elected Tshwane mayor in four-party deal",
+  "dek": "ActionSA’s Nasiphi Moya was re-elected mayor of Tshwane on Thursday, beating the DA with backing from the ANC, the EFF and the MK Party.",
+  "tags": [
+    "tshwane",
+    "nasiphi-moya",
+    "coalitions",
+    "gauteng"
+  ],
+  "body": "Nasiphi Moya of ActionSA was re-elected executive mayor of the City of Tshwane on Thursday, winning 115 votes to 87 for the Democratic Alliance’s Cilliers Brink. Seven ballots were spoilt.\n\nThe 4 November local elections left the capital without a majority. Of 214 council seats, 108 are needed to govern alone. The DA finished first with 74 seats, about 34% of the vote. ActionSA took 48, the ANC 44, the Freedom Front Plus 17, the EFF 13 and the MK Party four.\n\nMoya’s majority comes from a four-party accord signed beside the chamber just before the votes. ActionSA, the ANC, the EFF and the MK Party hold 109 seats together. Several smaller parties also backed her, which helps explain a tally above that bloc. A DA request to delay the sitting failed by 119 votes to 88.\n\nThe ANC’s Naeem Patel was elected speaker, with 119 votes to 71 for the DA’s Pogiso Mthimunye and 19 for the Freedom Front Plus’s Willie Spies. The EFF’s Omphile Maotwe became deputy mayor unopposed, and the ANC’s April Dan Mabona chief whip, also unopposed. Councillors from the winning bloc sang in the chamber.\n\n## A deputy who wanted her charged\n\nIn October the Bronkhorstspruit treatment works supplied water for about three weeks without chlorine. Health facilities recorded more than 800 cases of gastrointestinal illness, many among young children. Moya told Parliament the failure was indefensible.\n\nDays before the election, Maotwe opened a criminal case against her and called for her resignation. She is now the deputy mayor, and it is not yet clear whether the case or the trust will last.\n\nMetro coalitions in Gauteng have collapsed over less than a one-seat majority. Moya first became mayor in October 2024, after ActionSA left a DA-led arrangement and Brink was removed. This term runs to 2031.\n\nActionSA’s share of the vote rose by about 13 points, to roughly 22%, and it won 26 wards. The ANC, largest after the 2021 election with 75 seats, is now third. Michael Beaumont, the party’s national chair, said a troubled city needs continuity. Brink said the DA would serve as the opposition.\n\nHow much was fixed is less clear than those claims. Moya’s office has cited funded budgets, a smaller Eskom debt and higher cash reserves. Those are the administration’s figures, and they were not independently confirmed in this week’s reporting.\n\nThe water failure is on firmer ground. Chlorine shortages were still closing municipal pools the day before the council sat.\n\n## What comes next\n\nJohannesburg and Ekurhuleni delayed their leadership votes until Friday. Similar talks are under way there, but the agreements had not been signed by Thursday evening. Herman Mashaba has said he expects to be elected mayor of Johannesburg. ANC secretary-general Fikile Mbalula is due to brief the media on the wider negotiations on Friday.\n\nFor residents, party labels matter less than safe water, working lights and bills that add up. The capital now has a five-year council, a narrow majority, and a deputy who recently wanted the mayor charged.",
+  "sources": [
+    {
+      "title": "Confirmed: Nasiphi Moya re-elected as Tshwane Mayor",
+      "url": "https://iol.co.za/lge2026/2026-11-26-confirmed-nasiphi-moya-re-elected-as-tshwane-mayor/"
+    },
+    {
+      "title": "ActionSA's Nasiphi Moya re-elected Tshwane mayor",
+      "url": "https://www.enca.com/news-top-stories/actionsas-nasiphi-moya-re-elected-tshwane-mayor"
+    },
+    {
+      "title": "ActionSA’s Nasiphi Moya beats DA’s Cilliers Brink to retain Tshwane mayoral seat",
+      "url": "https://www.sowetan.co.za/news/2026-11-26-actionsas-nasiphi-moya-beats-das-cilliers-brink-to-retain-tshwane-mayoral-seat/"
+    },
+    {
+      "title": "ActionSA’s Nasiphi Moya re-elected Tshwane mayor as multiparty coalition holds firm",
+      "url": "https://thenational.co.za/news/2026-11-26-actionsa-s-nasiphi-moya-re-elected-tshwane-mayor-as-multiparty-coalition-holds-firm/"
+    },
+    {
+      "title": "Tshwane Election Results 2026",
+      "url": "https://www.rateweb.co.za/elections-2026/results/tshwane/"
+    }
+  ],
+  "publishedAt": "2026-11-26T19:28:52.271Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Empty council desk with coloured folders and a glass of water.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-26-moya-re-elected-tshwane-mayor-in-four-party-deal-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-26-moya-re-elected-tshwane-mayor-in-four-party-deal-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

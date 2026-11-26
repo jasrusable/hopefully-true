@@ -1,36 +1,40 @@
 {
-  "id": "2026-11-26-archaeologist-looks-into-sealed-chamber-of-golden-treasures",
-  "slug": "2026-11-26-archaeologist-looks-into-sealed-chamber-of-golden-treasures",
+  "id": "2026-11-26-candlelight-reveals-treasures-in-a-long-sealed-egyptian-tomb",
+  "slug": "2026-11-26-candlelight-reveals-treasures-in-a-long-sealed-egyptian-tomb",
   "date": "2026-11-26",
   "year": 1922,
-  "title": "Archaeologist looks into sealed chamber of golden treasures",
-  "dek": "Howard Carter peers by candlelight into a crowded chamber of Tutankhamun’s tomb in Egypt’s Valley of the Kings.",
-  "body": "In the Valley of the Kings this afternoon, British archaeologist Howard Carter cleared the last rubble from a descending passage and reached a second sealed doorway. He made a small breach near the top left corner, tested the air with a candle, and looked inside. Lord Carnarvon, Lady Evelyn Herbert and the engineer Arthur Callender waited beside him.\n\nHot air from the chamber made the flame flicker. As his eyes adjusted, a crowded room of extraordinary objects appeared: two ebony statues of a king in gold sandals, gilded animal-shaped couches, painted caskets, a golden throne and many other furnishings heaped together. Carnarvon asked whether he could see anything. Carter answered that it was wonderful. He then widened the hole and, with an electric torch as well as another candle, let the others look in. A further sealed door stood between the two statues.\n\nThe plaster seals carried the name of Tutankhamun, a little-known pharaoh of the eighteenth dynasty who had ruled only briefly more than three thousand years earlier. The outer stairway had been found on 4 November. Carter refilled it for safety and cabled Carnarvon in England. The earl arrived in Luxor a few days ago. Marks of ancient damage and repair on the doors had suggested robbers might have emptied the place, yet the objects still packed inside showed that any earlier entry had been stopped short.\n\nCarter, who came to Egypt as a young artist and later worked as an inspector of antiquities, had searched this ground for years with Carnarvon’s money. Many experts believed the valley held nothing more. One last season, begun at the start of November, uncovered the steps just as that support was about to end. Listing, photographing and conserving every object, and opening whatever lies beyond, will now require long and careful seasons of work.\n\nThe discovery still matters because almost no other New Kingdom royal burial survived so nearly complete. The thousands of objects that were eventually recorded and moved have given people far from Egypt a concrete picture of ancient craft, ritual and daily splendour, and they still prompt fresh study more than a century later.",
+  "title": "Candlelight reveals treasures in a long-sealed Egyptian tomb",
+  "dek": "Howard Carter looked through a hole in a sealed door in the Valley of the Kings and saw a chamber filled with ancient objects.",
+  "body": "In the Valley of the Kings near Luxor, a team cleared the last rubble from a descending passage this afternoon and reached a second sealed doorway.\n\nHoward Carter cut a small hole in the upper left corner and held a candle to the opening. Hot air made the flame flicker, but it stayed alight. Lord Carnarvon asked whether he could see anything. Carter answered that it was wonderful, then widened the hole so both could look by candle and electric torch.\n\nThe light fell on a crowded chamber of objects left undisturbed for more than three thousand years. Two dark statues of a king, worked in gold, stood among gilded animal-shaped couches, painted caskets, alabaster vessels, a throne and heaped chariot parts. The name of the pharaoh Tutankhamun appeared on many pieces, and another sealed door stood between the statues.\n\nLady Evelyn Herbert and Arthur Callender were present with the Egyptian foremen. Earlier seals had shown that the outer entrance was forced and repaired in antiquity, so an empty room had seemed possible. The first clear view eased that fear. The doorway was closed again and left under guard, with Egyptian officials expected for a formal opening.\n\nThe valley has been dug over for generations, and many believed little remained. Today’s glimpse suggests one royal burial was never fully stripped by robbers.\n\nThe notes made by candlelight that afternoon, and the objects that followed, still set a standard for recording an ancient site. An almost intact royal tomb remains one of the clearest views we have of the craft, belief and material life of pharaonic Egypt.",
   "sources": [
     {
-      "title": "Howard Carter's excavation journal for 1922",
+      "title": "Tutankhamun: Anatomy of an Excavation | The Griffith Institute",
       "url": "https://www.griffith.ox.ac.uk/discoveringTut/journals-and-diaries/season-1/journal.html"
     },
     {
-      "title": "Close Call: How Howard Carter Almost Missed King Tut's Tomb",
-      "url": "https://www.nationalgeographic.com/history/history-magazine/article/findingkingtutstomb"
+      "title": "How Howard Carter Discovered King Tut's Golden Tomb",
+      "url": "https://www.smithsonianmag.com/history/how-howard-carter-discovered-king-tuts-golden-tomb-180981052/"
+    },
+    {
+      "title": "Archaeologists enter tomb of King Tut",
+      "url": "https://www.history.com/this-day-in-history/november-26/archaeologists-enter-tomb-of-king-tut"
     }
   ],
   "image": {
-    "alt": "Candlelight glowing from a stone tomb doorway onto golden objects",
+    "alt": "Candlelight at the entrance to an ancient tomb chamber.",
     "model": "grok-imagine-image-2.0",
     "aiGenerated": true,
     "hero": {
-      "src": "/img/2026-11-26-archaeologist-looks-into-sealed-chamber-of-golden-treasures-1200.webp",
+      "src": "/img/2026-11-26-candlelight-reveals-treasures-in-a-long-sealed-egyptian-tomb-1200.webp",
       "width": 1200,
       "height": 675
     },
     "thumb": {
-      "src": "/img/2026-11-26-archaeologist-looks-into-sealed-chamber-of-golden-treasures-480.webp",
+      "src": "/img/2026-11-26-candlelight-reveals-treasures-in-a-long-sealed-egyptian-tomb-480.webp",
       "width": 480,
       "height": 270
     }
   },
-  "publishedAt": "2026-11-26T13:20:20.383Z",
+  "publishedAt": "2026-11-26T19:36:44.382Z",
   "model": "grok-4.7"
 }

@@ -1,0 +1,56 @@
+{
+  "id": "2026-11-26-south-africa-passes-one-million-tourists-in-october",
+  "slug": "2026-11-26-south-africa-passes-one-million-tourists-in-october",
+  "story": "South Africa welcomed more than one million international tourists in October, about 10 percent more than a year earlier, and is on track to beat last year’s record.",
+  "topic": "Business",
+  "place": "South Africa",
+  "title": "South Africa passes one million tourists in October",
+  "dek": "South Africa recorded 1 020 249 international tourists in October, 10 percent more than a year earlier, and remains on course for a new annual record.",
+  "tags": [
+    "south-africa",
+    "tourism",
+    "statistics",
+    "economy"
+  ],
+  "body": "South Africa welcomed 1 020 249 international tourists in October 2026. That was 10 percent more than the 927 426 who arrived in the same month of 2025. From January to October the running total reached 9 437 084, up 10.2 percent on the same period last year.\n\nThe numbers come from Statistics South Africa’s monthly release. The Department of Tourism highlighted them on 26 November. Minister Patricia de Lille said the growth shows rising demand for the country’s attractions. With two months left in the year, she said, South Africa is well placed to pass the 10.5 million international arrivals recorded in all of 2025.\n\n## Neighbours lead the increase\n\nMost of the extra visitors came from the African continent. Arrivals from Africa rose 13.8 percent in October and 12.3 percent over the first ten months. Tourists from Southern African Development Community countries numbered 767 078, about three-quarters of the monthly total. Mozambique sent 212 875, Zimbabwe 206 581 and Lesotho 166 630. Most of these travellers crossed by road. The Lebombo border post in Mpumalanga was the busiest single entry point, with 215 299 tourist arrivals.\n\nOverseas markets were quieter. They accounted for 236 375 arrivals, or 23 percent of the total, and were down 0.9 percent on a year earlier. Nearly all of them arrived by air. The United Kingdom led with 39 184 visitors, a small rise of 0.6 percent, just ahead of Germany at 37 270. The United States sent 29 583, a drop of 9.6 percent, which is why the UK moved into the top overseas spot for the month. Europe as a whole rose 3.1 percent, while North America fell 10.4 percent.\n\nReaders watching from Switzerland will see a modest gain closer to home. Switzerland sent 6 652 tourists, up 10.8 percent from 6 005 a year earlier. That was enough for ninth place among overseas markets. A South African summer still seems to have a few fans when the Alps turn cold.\n\n## A record looks likely, not certain\n\nThe arithmetic for a new annual high is favourable. South Africa needs roughly 1.06 million more arrivals in November and December to clear 10.5 million. Recent months have often been stronger than that pace, and December is usually busy as summer and the holidays arrive. The outcome still depends on the actual counts. Stats SA has noted that some smaller ports lack complete data because of weak network coverage, though the main published totals rest on the ports that reported.\n\nAlmost all October tourists, 97.8 percent, were classed as being on holiday. The official category is broad. It covers vacations, visits to friends and family, shopping and other personal reasons. Business, study and medical travel made up the rest.\n\nThe department also noted a reader award that named South Africa the most desirable destination for nature and wildlife. The October figures suggest the appeal is holding, above all among neighbours who can drive across the border and among a steady stream of visitors from Europe. Whether the extra arrivals bring wider gains will depend on how long people stay, what they spend, and how far that money reaches beyond the usual routes. The minister said the task now is to draw investment, widen the experiences on offer and make sure more communities share in the benefits.",
+  "sources": [
+    {
+      "title": "Tourism reports South Africa welcomes 1 million visitors in one month",
+      "url": "https://www.gov.za/news/media-statements/tourism-reports-south-africa-welcomes-1-million-visitors-one-month-26-nov"
+    },
+    {
+      "title": "SA welcomes over one million international tourists in October",
+      "url": "https://witness.co.za/news/2026/11/26/sa-welcomes-over-one-million-international-tourists-in-october/"
+    },
+    {
+      "title": "International tourism, October 2026",
+      "url": "https://www.statssa.gov.za/publications/P0350/P0350October2026.pdf"
+    },
+    {
+      "title": "South Africa Tourism Surpasses Pre-Pandemic Levels in 2025",
+      "url": "https://www.statssa.gov.za/?p=19362"
+    }
+  ],
+  "publishedAt": "2026-11-26T19:34:35.485Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Passport and binoculars on a table with mountains beyond.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-26-south-africa-passes-one-million-tourists-in-october-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-26-south-africa-passes-one-million-tourists-in-october-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

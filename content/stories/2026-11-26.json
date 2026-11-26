@@ -1,42 +1,46 @@
 [
   {
-    "story": "Swiss authorities confirmed the first cyber attacks that used AI agents, compromising systems at companies and at operators of critical infrastructure such as electricity and water suppliers.",
-    "category": "Switzerland",
+    "story": "ActionSA’s Nasiphi Moya was re-elected mayor of Tshwane on Thursday after a coalition including the ANC, the EFF and the MK Party backed her over the DA’s Cilliers Brink.",
+    "topic": "Politics",
+    "place": "South Africa",
     "sources": [
-      "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
-      "https://www.swissinfo.ch/eng/swiss-ai/switzerland-reports-first-ai-based-cyberattacks-on-critical-infrastructure/92440400"
+      "https://iol.co.za/lge2026/2026-11-26-confirmed-nasiphi-moya-re-elected-as-tshwane-mayor/",
+      "https://www.enca.com/news-top-stories/actionsas-nasiphi-moya-re-elected-tshwane-mayor"
     ]
   },
   {
-    "story": "South Africa welcomed more than one million international tourists in October, a rise of about 10 percent that puts the country on course to beat last year’s annual record.",
-    "category": "South Africa",
+    "story": "Authorities opened a sluice gate at the Vaal Dam after heavy rain pushed it above full capacity, while Gauteng and Mpumalanga cleaned up from flash floods that damaged homes and roads.",
+    "topic": "Environment",
+    "place": "South Africa",
     "sources": [
-      "https://www.bizcommunity.com/article/south-africa-tops-1-million-tourist-arrivals-in-october-639091a",
+      "https://www.sanews.gov.za/south-africa/vaal-dam-opens-sluice-gate-water-levels-rise",
+      "https://www.citizen.co.za/news/south-africa/weather/gauteng-clears-debris-mpumalanga-drownings-cast-shadow-after-wednesdays-flash-flooding-pics-and-video/"
+    ]
+  },
+  {
+    "story": "South Africa welcomed more than one million international tourists in October, about 10 percent more than a year earlier, and is on track to beat last year’s record.",
+    "topic": "Business",
+    "place": "South Africa",
+    "sources": [
+      "https://www.gov.za/news/media-statements/tourism-reports-south-africa-welcomes-1-million-visitors-one-month-26-nov",
       "https://witness.co.za/news/2026/11/26/sa-welcomes-over-one-million-international-tourists-in-october/"
     ]
   },
   {
-    "story": "Japan’s space agency unveiled a prototype rover, developed with India, that is designed to search for water near the Moon’s south pole before a planned launch in 2028.",
-    "category": "Science",
+    "story": "Snow reached the Swiss lowlands on Thursday for the first time this winter, while high Alpine valleys recorded their deepest November snow since 1987.",
+    "topic": "Environment",
+    "place": "Switzerland",
     "sources": [
-      "https://www.japantimes.co.jp/news/2026/11/26/japan/science-health/jaxa-moon-rover/",
-      "https://mainichi.jp/english/articles/20261126/p2a/00m/0sc/002000c"
+      "https://www.20min.ch/story/erster-schnee-wintereinbruch-im-flachland-hier-schneit-es-jetzt-103673999"
     ]
   },
   {
-    "story": "The United States proposed new tariffs on goods from 14 major trading partners, including Switzerland, China and the European Union, citing excess industrial capacity.",
-    "category": "Business",
+    "story": "Switzerland’s government confirmed that from January 2027 pregnant women will no longer pay health-insurance deductibles or co-payments from the start of pregnancy, rather than only from the 13th week.",
+    "topic": "Health",
+    "place": "Switzerland",
     "sources": [
-      "https://www.bbc.com/news/articles/c893r9ke5p97o",
-      "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
-    ]
-  },
-  {
-    "story": "At least 31 people were killed and 21 injured when a fuel tanker crashed and caught fire on a highway surrounding Cairo.",
-    "category": "World",
-    "sources": [
-      "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
-      "https://www.bbc.com/news/articles/c3gre90l0g45o"
+      "https://www.nau.ch/news/schweiz/schwangere-zahlen-keinen-selbstbehalt-mehr-67206572",
+      "https://www.20min.ch/fr/story/sante-grossesse-une-bonne-nouvelle-pour-les-femmes-enceintes-des-2027-103673626"
     ]
   }
 ]

@@ -25,10 +25,10 @@ const schema = {
   },
 };
 
-export async function writeArticle({ date, story }) {
+export async function writeArticle({ date, story, promptFile = '2-write-article.md' }) {
   const { answer, usd, seen } = await ask({
     model: MODELS.write, schema, search: ['web_search'], maxSearches: 4,
-    prompt: prompt('2-write-article.md', {
+    prompt: prompt(promptFile, {
       date, story: story.story, sources: story.sources.join(' and ') || '(search for it)',
     }),
   });

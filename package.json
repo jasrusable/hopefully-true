@@ -10,7 +10,9 @@
     "daily": "node src/daily.mjs",
     "build": "node src/sync-readme.mjs && node src/build-site.mjs out",
     "check": "node src/sync-readme.mjs --check",
-    "serve": "python3 -m http.server 8787 --bind 127.0.0.1 -d out"
+    "serve": "python3 -m http.server 8787 --bind 127.0.0.1 -d out",
+    "headlines": "node src/dry-run.mjs headlines",
+    "article": "node src/dry-run.mjs article"
   },
   "dependencies": {
     "sharp": "^0.35.5"

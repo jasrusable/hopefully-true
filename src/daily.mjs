@@ -4,11 +4,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { CONTENT, ARTICLES_PER_DAY, MAX_RUN_USD, STORY_USD, ON_THIS_DAY_USD, LESSON_USD, HISTORY_RESERVE_USD, MODELS, zurichDay } from './config.mjs';
+import { loadEnv } from './env.mjs';
+import { readAll, recentTitles } from './archive.mjs';
 import { findStories } from './find-stories.mjs';
 import { writeArticle } from './write-article.mjs';
 import { drawImage } from './draw-image.mjs';
 import { onThisDay } from './on-this-day.mjs';
 import { historyLesson } from './history-lesson.mjs';
+
+loadEnv();
 
 const date = zurichDay();
 const articlesDir = path.join(CONTENT, 'articles');
@@ -19,8 +23,6 @@ for (const d of [articlesDir, onThisDayDir, lessonsDir, path.dirname(storiesFile
 
 let spent = 0;
 const slugify = s => s.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 70);
-const readAll = dir => fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort().reverse()
-  .map(f => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
 
 const newsOk = await news();
 // After the news, which may not touch their reserve.
@@ -51,7 +53,7 @@ async function news() {
   if (fs.existsSync(storiesFile)) {
     stories = JSON.parse(fs.readFileSync(storiesFile, 'utf8'));
   } else {
-    const recent = saved.filter(a => Date.now() - new Date(a.publishedAt) < 4 * 864e5).map(a => a.title);
+    const recent = recentTitles(saved);
     const found = await findStories({ date, count: ARTICLES_PER_DAY, recent });
     spent += found.usd;
     stories = found.stories;

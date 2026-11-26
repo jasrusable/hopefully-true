@@ -135,6 +135,9 @@ src/
   on-this-day.mjs     step 4, On this day
   history-lesson.mjs  step 5, the daily moment from history (its painting is drawn by draw-image.mjs)
   daily.mjs           runs steps 1 to 5 for today, within a spending limit
+  dry-run.mjs         local headlines / one-article dry-run of the same find and write steps
+  archive.mjs         read-only helpers for the content archive
+  env.mjs             loads .env.local without printing values
   build-site.mjs      builds the website into out/
   sync-readme.mjs     keeps the prompts in this README identical to prompts/
   config.mjs          settings: categories, models, articles per day, budget
@@ -153,12 +156,22 @@ You need Node.js 20 or later and an [xAI API key](https://console.x.ai).
 ```sh
 npm install
 export XAI_API_KEY=...          # keep it secret; never commit it
+# Or put the key in .env.local (gitignored); the scripts load it if the variable is not already set.
 npm run daily                   # find, write and draw today's articles and the two history pieces into content/
 npm run build                   # build the site into out/
 npm run serve                   # open http://localhost:8787
 ```
 
-To try it without touching the real archive, set `CONTENT_DIR=scratch` and `ARTICLES_PER_DAY=3` (add `PICTURES=off` to skip the illustrations).
+To try a prompt change without a full run or a production deploy, the same find-stories and write-article code can be run on their own. Output goes to `dry-run/` (gitignored) and `content/` is never written. Images are skipped. Uncommitted edits in `prompts/` are used automatically; pass `--prompt` to compare another file. Each run records the prompt path and a SHA-256 of the file.
+
+```sh
+npm run headlines               # print numbered story headlines
+npm run headlines -- --prompt path/to/alt-find.md
+npm run article -- 3            # write the article for story 3 from the latest headlines run
+npm run article -- 3 --prompt path/to/alt-write.md
+```
+
+To try a full daily run without touching the real archive, set `CONTENT_DIR=scratch` and `ARTICLES_PER_DAY=3` (add `PICTURES=off` to skip the illustrations).
 
 ## Licence
 

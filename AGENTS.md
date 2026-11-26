@@ -13,6 +13,9 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 - `src/on-this-day.mjs` – step 4: “On this day”, one sourced event from this date in an earlier year.
 - `src/history-lesson.mjs` – step 5: “From history”, one person, one sourced quote, a painting description.
 - `src/daily.mjs` – runs steps 1–5 for today, idempotent, within the budget; a failed history piece never stops the news.
+- `src/dry-run.mjs` – local headlines / one-article dry-run of the same find and write steps; writes only to `dry-run/`.
+- `src/archive.mjs` – read-only helpers for the content archive, shared by the daily run and the dry-run.
+- `src/env.mjs` – loads `.env.local` (and `.env`) without overriding variables already set; never logs values.
 - `src/build-site.mjs` – builds the static site into `out/`.
 - `src/sync-readme.mjs` – copies the prompts into the README.
 - `src/config.mjs` – categories, models, articles per day, budget.
@@ -22,10 +25,12 @@ A small daily news site written by AI (xAI's Grok), built as plain static files.
 ## Commands
 
 - `npm run daily` – generate today's articles and history pieces (needs `XAI_API_KEY`).
+- `npm run headlines` – run only the find-stories step, print numbered headlines, write JSON and Markdown to `dry-run/` (gitignored). Picks up local edits in `prompts/`. Pass `--prompt <path>` to try another file. Never writes to `content/`.
+- `npm run article -- N` – write the article for story N from the latest headlines run (or `--from <dir>`). Images are skipped. Also accepts `--prompt <path>`.
 - `npm run build` – sync the README and build the site into `out/`.
 - `npm run check` – verify the README matches `prompts/`.
 - `npm run serve` – preview `out/` at http://localhost:8787.
-- Cheap test: `CONTENT_DIR=scratch ARTICLES_PER_DAY=2 PICTURES=off npm run daily`.
+- Cheap full-run test: `CONTENT_DIR=scratch ARTICLES_PER_DAY=2 PICTURES=off npm run daily`.
 
 ## Principles
 

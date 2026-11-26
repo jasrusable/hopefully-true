@@ -20,10 +20,10 @@ const schema = {
   },
 };
 
-export async function findStories({ date, count, recent }) {
+export async function findStories({ date, count, recent, promptFile = '1-find-stories.md' }) {
   const { answer, usd, seen } = await ask({
     model: MODELS.find, schema, search: ['web_search', 'x_search'], maxSearches: 12,
-    prompt: prompt('1-find-stories.md', {
+    prompt: prompt(promptFile, {
       date, count,
       recent_stories: recent.length ? recent.map(t => `- ${t}`).join('\n') : '- (none)',
     }),

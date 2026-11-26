@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-26-swiss-officials-confirm-first-cyber-attacks-assisted-by-ai-agents",
+  "slug": "2026-11-26-swiss-officials-confirm-first-cyber-attacks-assisted-by-ai-agents",
+  "story": "Swiss authorities confirmed the first cyber attacks that used AI agents, compromising systems at companies and at operators of critical infrastructure such as electricity and water suppliers.",
+  "category": "Switzerland",
+  "title": "Swiss officials confirm first cyber attacks assisted by AI agents",
+  "dek": "Five recent attacks in Switzerland used AI agents, officials say, and four of them broke into systems, including at critical infrastructure, with no major outages.",
+  "tags": [
+    "switzerland",
+    "cybersecurity",
+    "critical-infrastructure",
+    "artificial-intelligence"
+  ],
+  "body": "Swiss officials have confirmed the first cyber attacks in the country in which hackers used AI agents. The lights stayed on. In several cases, the computer systems did not.\n\nOn 24 November the Federal Office for Cybersecurity said it had its first reports of attacks carried out with the help of an AI agent. Companies were hit, and so were operators of critical infrastructure in at least two sectors. Every case known to the office then ended in a compromised IT system. The office called this a shift in the cyber threat landscape.\n\nOn Thursday director Florian Schütz told Swiss broadcaster SRF there were five confirmed cases, all from recent days. In four, attackers got in. Three targets were operators of critical infrastructure. Others were small and medium-sized firms that reported voluntarily. There were no major outages. The office will not name anyone, and it does not know who attacked.\n\nSome outlets, using a wire summary of that interview, said only two attacks succeeded. SRF’s own account is four out of five, and Reuters reported the same figure. That is the clearer figure, unless the office corrects it. Electricity, drinking water and telecoms are examples of critical infrastructure, not a confirmed victim list.\n\n## Not a robot uprising\n\nAn AI agent, as the office describes it, can search for weaknesses, pick a tool, check the result and plan the next step. The software is called an agentic offensive framework. A person still aims it. Security testers use similar programs, so the tools cut both ways. These were assisted attacks. The chatbot has not taken the dams.\n\nThe openings were ordinary: easy passwords, and known flaws in systems on the internet. Agents try them in a fraction of the time a person needs, and switch if blocked. The office says the number of such agents online has almost doubled since October, and names ARTEX and CyberStrikeAI as examples. It has not said those tools were used in Switzerland. Italy has warned of mass campaigns using similar software.\n\n## Why it still matters\n\nA break-in at a power or water operator is serious even when the service keeps running. It can mean stolen data, or a door left for later. Schütz was plain: if there is no vulnerability, an AI agent cannot get in.\n\nThe office wants fewer systems open to the internet, critical updates within 24 hours, and a second login check on webmail and VPNs. It is sharing signs of these tools with infrastructure operators. Raphael Reischuk, of the National Test Institute for Cybersecurity, told SRF he expects a larger wave, and that many smaller firms lack the staff to keep pace. The office says it already helps when critical infrastructure is hit.\n\nUntil a victim or an investigator speaks, it is not known whether these were criminals, a state, or someone trying a new tool. The office’s bet is that five will not be the last.",
+  "sources": [
+    {
+      "title": "Cyberattacks involving AI agents: First confirmed cases in Switzerland",
+      "url": "https://www.bacs.admin.ch/en/26-ki-agenten-1-en"
+    },
+    {
+      "title": "Fünf bestätigte Fälle: Erstmals Cyberangriffe mit KI-Agenten in der Schweiz",
+      "url": "https://www.srf.ch/news/schweiz/fuenf-bestaetigte-faelle-erstmals-cyberangriffe-mit-ki-agenten-in-der-schweiz"
+    },
+    {
+      "title": "Switzerland reports first AI-enabled cyberattacks on critical infrastructure",
+      "url": "https://www.swissinfo.ch/eng/swiss-ai/switzerland-reports-first-ai-based-cyberattacks-on-critical-infrastructure/92440400"
+    },
+    {
+      "title": "AI agents used in five cyber attacks in Switzerland, government says",
+      "url": "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/"
+    },
+    {
+      "title": "Italy and Switzerland warn of autonomous AI-driven cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/italy-and-switzerland-warn-of-autonomous-ai-driven-cyberattacks/"
+    }
+  ],
+  "publishedAt": "2026-11-26T13:09:43.886Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "Power lines, a water tower and a server cabinet at dusk.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-26-swiss-officials-confirm-first-cyber-attacks-assisted-by-ai-agents-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-26-swiss-officials-confirm-first-cyber-attacks-assisted-by-ai-agents-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}

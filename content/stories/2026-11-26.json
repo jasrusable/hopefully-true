@@ -1,0 +1,42 @@
+[
+  {
+    "story": "Swiss authorities confirmed the first cyber attacks that used AI agents, compromising systems at companies and at operators of critical infrastructure such as electricity and water suppliers.",
+    "category": "Switzerland",
+    "sources": [
+      "https://www.reuters.com/legal/litigation/ai-agents-used-five-cyber-attacks-switzerland-government-says-2026-11-26/",
+      "https://www.swissinfo.ch/eng/swiss-ai/switzerland-reports-first-ai-based-cyberattacks-on-critical-infrastructure/92440400"
+    ]
+  },
+  {
+    "story": "South Africa welcomed more than one million international tourists in October, a rise of about 10 percent that puts the country on course to beat last year’s annual record.",
+    "category": "South Africa",
+    "sources": [
+      "https://www.bizcommunity.com/article/south-africa-tops-1-million-tourist-arrivals-in-october-639091a",
+      "https://witness.co.za/news/2026/11/26/sa-welcomes-over-one-million-international-tourists-in-october/"
+    ]
+  },
+  {
+    "story": "Japan’s space agency unveiled a prototype rover, developed with India, that is designed to search for water near the Moon’s south pole before a planned launch in 2028.",
+    "category": "Science",
+    "sources": [
+      "https://www.japantimes.co.jp/news/2026/11/26/japan/science-health/jaxa-moon-rover/",
+      "https://mainichi.jp/english/articles/20261126/p2a/00m/0sc/002000c"
+    ]
+  },
+  {
+    "story": "The United States proposed new tariffs on goods from 14 major trading partners, including Switzerland, China and the European Union, citing excess industrial capacity.",
+    "category": "Business",
+    "sources": [
+      "https://www.bbc.com/news/articles/c893r9ke5p97o",
+      "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
+    ]
+  },
+  {
+    "story": "At least 31 people were killed and 21 injured when a fuel tanker crashed and caught fire on a highway surrounding Cairo.",
+    "category": "World",
+    "sources": [
+      "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
+      "https://www.bbc.com/news/articles/c3gre90l0g45o"
+    ]
+  }
+]

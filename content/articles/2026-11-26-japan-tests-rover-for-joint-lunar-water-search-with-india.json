@@ -1,0 +1,59 @@
+{
+  "id": "2026-11-26-japan-tests-rover-for-joint-lunar-water-search-with-india",
+  "slug": "2026-11-26-japan-tests-rover-for-joint-lunar-water-search-with-india",
+  "story": "Japan’s space agency unveiled a prototype rover, developed with India, that is designed to search for water near the Moon’s south pole before a planned launch in 2028.",
+  "category": "Science",
+  "title": "Japan tests rover for joint lunar water search with India",
+  "dek": "Japan’s space agency drove a test model of a rover it plans to send with India to the Moon’s south pole in fiscal 2028 to look for water.",
+  "tags": [
+    "japan",
+    "india",
+    "moon",
+    "space"
+  ],
+  "body": "On 25 November, Japan’s space agency drove a ground test model of a lunar rover around an outdoor course at its Chofu Aerospace Center in suburban Tokyo. The machine is not the flight model. It is a prototype for checking travel over rough ground, and for supporting a drill meant to search for water.\n\nThe rover belongs to LUPEX, Lunar Polar Exploration, a joint mission with India. Japan is building the rover and will launch the spacecraft on an H3 rocket from Tanegashima. India’s space agency is building the lander. Instruments will come from Japan, India, NASA and Europe.\n\n## Four legs, and no hurry\n\nThe test model moves on four legs, each with a short caterpillar track rather than a normal wheel. At Chofu it crossed rocks and a dip meant to imitate a small crater. Reports put its speed at about three centimetres a second over roughly 18 metres, slow enough that a person could pass it at an easy stroll. The design is meant for slopes of about 25 degrees on uneven polar ground covered in fine dust called regolith.\n\nJAXA’s current mission page lists the rover at 420 kilograms with its instruments. The mass to be launched is given as 6,650 kilograms. The numbers may still change. After landing, the plan is about 100 days of work, and up to a year if the rover survives the lunar night.\n\nThe task is to measure water in the ground, not only to guess at it from orbit. Ice is thought to lie in polar craters that never see the Sun. The rover is meant to drive to likely spots, drill about a metre or deeper, and analyse samples on the Moon for water, other gases and minerals. A Japanese instrument, REIWA, heats a sealed sample and reads the water from the change in weight, and project manager Takeshi Hoshino has called it a centrepiece of a planned set of 11 instruments from Japan, India, the United States and Europe.\n\n## If the ice can be used\n\nWater in useful amounts, near sunlit ground where solar panels can work, could later be split into hydrogen and oxygen for rocket fuel and for air. Hauling water from Earth is expensive, so fuel made on the Moon would change the cost of longer stays and of trips toward Mars. Hoshino has said that is the longer aim. The results are also meant to support later lunar bases and the US-led Artemis programme.\n\nThat remains a hope. The ice may be scarce, hard to reach or awkward to process, and other missions are heading for the same region. What LUPEX offers is analysis of samples where they lie.\n\nLaunch is targeted for Japan’s fiscal 2028, from April 2028 to March 2029. The Mainichi reported that the prototype is due in India in 2027, and put Japan’s budget at 37.6 billion yen, about 236 million dollars, though published cost figures differ. Usable water, if it is there, is still a question the rover has not been sent to answer.",
+  "sources": [
+    {
+      "title": "JAXA unveils test model of rover for mission with India to find water on moon",
+      "url": "https://www.japantimes.co.jp/news/2026/11/26/japan/science-health/jaxa-moon-rover/"
+    },
+    {
+      "title": "Japan unveils lunar rover prototype for joint mission with India",
+      "url": "https://mainichi.jp/english/articles/20261126/p2a/00m/0sc/002000c"
+    },
+    {
+      "title": "LUPEX mission page, JAXA",
+      "url": "https://humans-in-space.jaxa.jp/future/lupex/mission/"
+    },
+    {
+      "title": "Lunar Polar Exploration (LUPEX), JAXA",
+      "url": "https://humans-in-space.jaxa.jp/en/biz-lab/tech/lupex/"
+    },
+    {
+      "title": "Japan unveils rover prototype for Moon water mission",
+      "url": "https://www.afp.com/en/japan-unveils-rover-prototype-moon-water-mission"
+    }
+  ],
+  "publishedAt": "2026-11-26T13:17:59.489Z",
+  "models": {
+    "find": "grok-4.7",
+    "write": "grok-4.7",
+    "draw": "grok-imagine-image-2.0",
+    "history": "grok-4.7"
+  },
+  "image": {
+    "alt": "A tracked rover on grey lunar dust beside a shadowed crater.",
+    "model": "grok-imagine-image-2.0",
+    "aiGenerated": true,
+    "hero": {
+      "src": "/img/2026-11-26-japan-tests-rover-for-joint-lunar-water-search-with-india-1200.webp",
+      "width": 1200,
+      "height": 675
+    },
+    "thumb": {
+      "src": "/img/2026-11-26-japan-tests-rover-for-joint-lunar-water-search-with-india-480.webp",
+      "width": 480,
+      "height": 270
+    }
+  }
+}
